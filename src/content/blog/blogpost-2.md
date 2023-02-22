@@ -11,86 +11,37 @@ description: 2022 was a year that flew by so fast, I've gotten amazing opportuni
 layout: '../../layouts/BlogPost.astro'
 ---
 
-# 2022 - my year in recap
+## Deorum petiit ignis
 
-So, 2022 flew by. I wanted to write a little recap to look back on this amazing year. I had so many amazing opportunities, met so many new people and got to experience amazing meetups and conferences.
+Lorem markdownum longo os thyrso telum, continet servat fetus nymphae, *vox
+nocte sedesque*, decimo. Omnia esse, quam sive; conplevit illis indestrictus
+admovit dedit sub quod protectus, impedit non.
 
-## Graduated (27th January)
+## Iovis late orbem Perseus sunt
 
-To kick the year of with a bang, I graduated from Odisee on 27th of January; Not much more to say here.
+Aras reperire, sui motis correpti coniunx Onetor amore ferire lacertis, petiit.
+Bis pallor et mecum me, igne patruelibus *tendebam*, vultu sterilique terruerat
+*tempore* medium aera **eadem Mittor**.
 
-![Me at graduation](<https://i.imgur.com/iEB1YQk.jpg>)
+- Non turba loca dederunt primordia ineamus Dictys
+- Tanti amat mundus sedula
+- Potuissent aetas parili coniuge se lumina breve
+- Tamen ille crepitantibus ulla coeperunt quibus iugulo
+- Pindusque solacia luctataque felix
 
-☝️ Me at graduation
+## Longum minus sic saepe
 
-## Started working full-time @vBridge
+Genu cupiens quoque: cum dolor: sollicitive cantu, et piae Leuconoe, huius non
+nil tuli Peleusque rauca. Et alvum cuncti Hippodamas meritis nec coniunx ausa,
+pete. Congestaque nisi nullus poena. Tanto cum, curvis vulnera quod optatis,
+trahens conplexa saepe.
 
-After officialy graduating, I started working full-time at vBridge, still super happy about that! vBridge has given me a lot of opportunities this past year. Since is my first year as a working person, this was also the year I went to conferences and meetups.
+Hominum quo. Signa germanaeque iuvat at feruntur precantibus corpus praebuerat
+excipit mixtaeque inferior, haec percepit regum: nec nec sit ferenti.
 
-![Our vBridge merch](<https://i.imgur.com/i2RWI1F.jpg>)
+## Geminas namque quod referitur argenteus aderat superstes
 
-☝️ Our awesome vBridge merch
+Insistere pugno. Cum morae vigilantibus dulces Cycnus: neque cum sororis.
 
-## First Guest lecture @Odisee (25 Jan)
-
-In January, right after graduation, I was invited by my university [Odisee](<https://www.odisee.be/en>), to give a session about working efficiently in teams as a student. This was a very fun thing to do! I think this was my first real in-person talk I ever gave. Maybe it was here that I caught the public speaking bug? 🐛
-
-![Giving my lecture @Odisee](<https://i.imgur.com/yqHfWOA.jpg>)
-
-☝️ Me giving me lecture at Odisee
-
-## First public speaking at meetup (21 apr)
-
-And then, the whole world of public speaking opened up to me. In April, I got the opportunity to give a lightning talk at [Full Stack Ghent](<https://fullstackbelgium.be/>). This would be my first real in-person talk at a conference with people smarter then me! This was also my first talk ever about the magic of [Astro](<https://www.astro.build>).
-
-![Me at Full Stack Ghent, first public speaking ever](<https://i.imgur.com/5QP6RUe.jpg>)
-
-☝️ Me at Full Stack Ghent, which was my first meetup (lightning) talk ever.
-
-## Moved offices (1 July)
-
-After being in the works for a couple of years, our new officebuilding at [Otterburcht](<https://www.otterburcht.eu>) was ready!
-
-![The beautiful Otterburcht site](<https://i.imgur.com/OUxvOgj.jpg>)
-
-☝️ The beautiful [Otterburcht](<https://www.otterburcht.eu>) offices.
-
-## Astro shipped v1 (09 Aug)
-
-Finally, after a year of hard work, Astro's version 1.0 was released on 9th of August 2022. It was amazing to see that a tool I started using at v0.15 grew so big and had such an awesome community. Astro v1 brought so many amazing things, like SSR and adapters.
-
-### Became Astro Ambassador
-
-Still waiting on my Astro swag tho 🤷‍♂️.
-
-## React Brussels (13 Oct)
-
-After speaking at multiple smaller meetups, this was my first talk in front of more than 100 people and man did that feel awesome! [React Brussels](<https://bejs.io>) was such a well organized and fun conference to be part of! I met so much new people, talked with so many experts in React, Preact and other frameworks.
-
-![Me at React Brussels](<https://i.imgur.com/GVyOZ5r.jpg>)
-
-☝️ Me at React Brussels, you can clearly see I was very excited to be there!
-
-## React Global Summit (13 Nov)
-
-I got invited to speak at React Global Summit. One of the biggest (only) virtual React conferences. Here I turned my Astro lightning talk into a full 30 min keynote. It was a lot of fun to do, but in-person conferences are waaaaaayyyyy more fun! I kind of missed connecting with the audience and the casual chat's afterwards.
-
-## What's next
-
-Ofcourse, that was 2022, I can't wait for what's about to happen in 2023. I allready have some dates marked on my calendar for 2023.
-
-### First international conference
-
-I'm so excited for this one! I'll be speaking in February at [JSWorld](<https://jsworldconference.com/>). If you want to keep up with all events past and upcoming 👉 [Check this page](<https://www.elian.codes/events>)
-
-![My JSWorld announcement](<https://i.imgur.com/rhQy292.jpg>)
-
-☝️ My announcement post from JSWorld.
-
-### 10 Mile of Antwerp
-
-This is going to be a pain in the butt. I never ran more than 2km before, so 16km is going to be quite difficult. Although it'll be hard, I'm looking forward to it! A little bit more sport & excercise was very welcome in my life, let's hope I can keep it up!
-
-![My Fancy Running](<https://i.imgur.com/r8w22tA.jpg>)
-
-☝ My first run ever!
+Hac Aestas solet docebo tandem tamquam omnis vitiantur mitte, vatis in animique
+infelix passimque. Superasset onus.

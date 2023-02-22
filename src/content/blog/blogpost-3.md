@@ -11,69 +11,37 @@ imgUrl: https://repository-images.githubusercontent.com/412152628/30d80147-4535-
 layout: ../../layouts/BlogPost.astro
 ---
 
-# Implementing UnoCSS in Astro
+## Deorum petiit ignis
 
-[UnoCSS](<https://github.com/unocss/unocss>) is a CSS engine, built by [Anthony Fu](<https://antfu.me>). It's rather a CSS engine than a CSS library. It's crazy fast, supports presets and is designed for flexibility and performance. I wanted to give this one a try, since I met Anthony last week at [JSWorld](<https://www.jsworldconference.com>), and I'm totally blast away by his work.
+Lorem markdownum longo os thyrso telum, continet servat fetus nymphae, *vox
+nocte sedesque*, decimo. Omnia esse, quam sive; conplevit illis indestrictus
+admovit dedit sub quod protectus, impedit non.
 
-## Astro Integration
+## Iovis late orbem Perseus sunt
 
-It's quite easy, since UnoCSS has a [third party integration for Astro](<https://github.com/unocss/unocss/tree/main/packages/astro>) (thus you can't install it through `astro add` CLI). Let's take a look at how to implement it.
+Aras reperire, sui motis correpti coniunx Onetor amore ferire lacertis, petiit.
+Bis pallor et mecum me, igne patruelibus *tendebam*, vultu sterilique terruerat
+*tempore* medium aera **eadem Mittor**.
 
-Let's first install the integration for Astro and the reset package.
+- Non turba loca dederunt primordia ineamus Dictys
+- Tanti amat mundus sedula
+- Potuissent aetas parili coniuge se lumina breve
+- Tamen ille crepitantibus ulla coeperunt quibus iugulo
+- Pindusque solacia luctataque felix
 
-```bash
-pnpm add @unocss/astro @unocss/reset
-```
+## Longum minus sic saepe
 
-Now, since we didn't use `astro add` to install the integration, we need to add it to our `astro.config.mjs` file manually.
+Genu cupiens quoque: cum dolor: sollicitive cantu, et piae Leuconoe, huius non
+nil tuli Peleusque rauca. Et alvum cuncti Hippodamas meritis nec coniunx ausa,
+pete. Congestaque nisi nullus poena. Tanto cum, curvis vulnera quod optatis,
+trahens conplexa saepe.
 
-Also, I noticed that the integration doesn't work wit Node < v18, so be sure you're on Node v18!
+Hominum quo. Signa germanaeque iuvat at feruntur precantibus corpus praebuerat
+excipit mixtaeque inferior, haec percepit regum: nec nec sit ferenti.
 
-```js
-import { defineConfig } from 'astro/config';
-import unocss from "@unocss/astro";
+## Geminas namque quod referitur argenteus aderat superstes
 
-export default defineConfig({
-  integrations: [
-    /* ... */
-    unocss(),
-  ],
-});
-```
+Insistere pugno. Cum morae vigilantibus dulces Cycnus: neque cum sororis.
 
-Now you should have a clean and resetted website. Let's add an integration to start writing utility-first CSS.
-
-## Presets and Configuration
-
-```bash
-pnpm add @unocss/preset-wind
-```
-
-```js
-import { defineConfig } from 'astro/config';
-import unocss from '@unocss/astro';
-import presetWind from '@unocss/preset-wind';
-
-// https://astro.build/config
-export default defineConfig({
-  integrations: [
-    unocss({
-      presets: [
-        presetWind(),
-        /* more presets */
-      ],
-      safelist: [
-        /* this you can use to exclude utilities from purge */
-      ],
-    })
-  ]
-});
-```
-
-Now you can use all the classes / utilities from the [WindCSS](https://windicss.org) library, in UnoCSS!
-
-Of course, there are many many more presets available, you can check them out [here](<https://github.com/unocss/unocss#presets>).
-
-Another awesome usecase and one of the drivers for me to use it, is the integration from UnoCSS with pure CSS icons! You can find [that part of the repo here](<https://github.com/unocss/unocss/tree/main/packages/preset-icons/>), but it's quite easy and straightforward.
-
-Tag [me on Twitter](<https://www.twitter.com/eliancodes>) if you have any questions or feedback!
+Hac Aestas solet docebo tandem tamquam omnis vitiantur mitte, vatis in animique
+infelix passimque. Superasset onus.
