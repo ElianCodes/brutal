@@ -1,5 +1,5 @@
 ---
-title: ✨ Building Blog tag index pages in Astro
+title: Blogpost 5
 author: Elian Van Cutsem
 pubDate: 2023-02-19 18:37
 tags:

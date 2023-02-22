@@ -1,5 +1,5 @@
 ---
-title: 💄 Implementing UnoCSS in Astro
+title: Blogpost 3
 description: UnoCSS is an atomic-CSS engine, designed with flexibility and performance in mind, I wanted to give it a try. Let's take a look at implementing it in Astro and see how it works.
 pubDate: 2023-02-14 23:49
 author: Elian Van Cutsem
