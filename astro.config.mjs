@@ -1,5 +1,4 @@
 import { defineConfig } from 'astro/config';
-import vue from '@astrojs/vue';
 import image from '@astrojs/image';
 import sitemap from '@astrojs/sitemap';
 import unocss from '@unocss/astro';
@@ -42,7 +41,6 @@ export default defineConfig({
   site: 'https://www.elian.codes/',
   trailingSlash: 'ignore',
   integrations: [
-    vue(),
     image({
       serviceEntryPoint: '@astrojs/image/sharp',
     }),
