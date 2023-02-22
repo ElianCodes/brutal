@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Default.astro';
+import AboutMe from '../components/home/AboutMe.astro';
+import RecentBlogPosts from '../components/generic/RecentBlogPosts.astro';
+import MobileSocials from '../components/home/MobileSocials.astro';
+import Description from '../components/home/Description.astro';
+---
+
+<Layout
+  title='Home'
+  pageTitle="Elian Codes"
+  description='Sofware Engineer @vBridge BV | Astro Ambassador | Elian blogs about webdevelopment, cloud native development and overall programming.'
+>
+  <main class='bg-green p-6'>
+    <MobileSocials />
+    <AboutMe />
+    <Description />
+    <RecentBlogPosts />
+  </main>
+</Layout>

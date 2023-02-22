@@ -1,0 +1,42 @@
+---
+import Button from '../generic/Button.astro';
+import { Image } from '@astrojs/image/components';
+import Card from '../generic/Card.astro';
+
+const src =
+  'https://firebasestorage.googleapis.com/v0/b/eliancodes-1632771244788.appspot.com/o/elian.jpg?alt=media&token=ccf7b7c1-ee54-43eb-b61d-cc3587e23959';
+---
+
+<section id='about' class='grid md:grid-cols-8 gap-8 mt-4'>
+  <h2 class='hidden'>About Elian</h2>
+  <Card
+    color='yellow'
+    extraClasses='flex flex-col justify-between items-start md:col-span-6'
+  >
+    <p class='mt-4 outfit text-2xl md:text-5xl lg:text-7xl'>
+      Software Engineer <a
+        class='text-blue'
+        target='_blank'
+        href='https://www.vbridge.eu/'>@vBridge</a
+      >
+    </p>
+    <p class='mt-2 outfit text-xl md:text-3xl lg:text-5xl'>
+      Ambassador <a class='text-red' target='_blank' href='https://astro.build/'
+        >@astro</a
+      >
+    </p>
+    <p class='sanchez mt-4 mb-8 text-lg md:text-xl lg:text-3xl'>
+      Located in Ghent, 🇧🇪
+    </p>
+    <Button href='/events/'>See what I do &rarr;</Button>
+  </Card>
+  <Card color='white' extraClasses='md:col-span-2 !p-0'>
+    <Image
+      class='object-cover h-full w-full rounded'
+      src={src}
+      alt='Elian Van Cutsem'
+      width={800}
+      height={800}
+    />
+  </Card>
+</section>

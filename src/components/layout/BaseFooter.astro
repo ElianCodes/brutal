@@ -1,0 +1,19 @@
+---
+const techs = [
+  { name: 'Astro', link: 'https://astro.build' },
+  { name: 'Vue', link: 'https://vuejs.org' },
+  { name: 'UnoCSS', link: 'https://uno.antfu.me' },
+  { name: 'Vercel', link: 'https://vercel.com' },
+  { name: 'Playwright', link: 'https://playwright.dev' },
+];
+const tech = techs[Math.floor(Math.random() * techs.length)];
+---
+
+<footer class='bg-black text-white p-6'>
+  <h2 class='hidden'>Footer</h2>
+  <p class='outfit'>
+    Built with <a href={tech.link} target='_blank' class='text-blue'
+      >{tech.name}</a
+    > & ☕️
+  </p>
+</footer>

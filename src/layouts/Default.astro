@@ -1,0 +1,57 @@
+---
+import BaseNavigation from '../components/layout/BaseNavigation.astro';
+import BaseFooter from '../components/layout/BaseFooter.astro';
+import BaseHead from '../components/layout/BaseHead.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  classList?: string;
+  pageTitle?: string;
+}
+
+const { title, description, classList, pageTitle } = Astro.props;
+---
+
+<html lang='en' class='h-full'>
+  <BaseHead title={title} description={description} />
+
+  <body class:list={[classList]}>
+    <BaseNavigation pageTitle={pageTitle} />
+    <slot />
+    <BaseFooter />
+    <style is:global>
+      .outfit {
+        font-family: 'Outfit', sans-serif;
+      }
+      .righteous {
+        font-family: 'Righteous', sans-serif;
+      }
+      .dm-serif {
+        font-family: 'DM Serif Text', serif;
+      }
+      .fredoka {
+        font-family: 'Fredoka One', sans-serif;
+      }
+      .poppins {
+        font-family: 'Poppins', sans-serif;
+      }
+      .sanchez {
+        font-family: 'Sanchez', serif;
+      }
+      .card-shadow {
+        filter: drop-shadow(7px 7px 0 rgb(0 0 0 / 1));
+        transition: all;
+        transition-duration: 0.5s;
+        animation: ease-in-out;
+      }
+      .card-shadow:hover {
+        filter: drop-shadow(5px 5px 0 rgb(0 0 0 / 1));
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </body>
+</html>

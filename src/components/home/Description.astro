@@ -1,0 +1,52 @@
+---
+import TagItem from '../blog/TagItem.astro';
+import Card from '../generic/Card.astro';
+
+const doing = [
+  { name: 'Astro', url: 'https://astro.build/' },
+  { name: 'Nuxt', url: 'https://nuxt.com/' },
+  { name: 'Laravel', url: 'https://laravel.com/' },
+  { name: 'Tailwind', url: 'https://tailwindcss.com/' },
+  { name: 'Firebase', url: 'https://firebase.google.com/' },
+  { name: 'Vue', url: 'https://vuejs.org/' },
+  { name: 'Vercel', url: 'https://vercel.com/' },
+  { name: 'Google Cloud', url: 'https://cloud.google.com' },
+  { name: 'Nest', url: 'https://nestjs.com' },
+  { name: 'Docker', url: 'https://www.docker.com' },
+  { name: 'Vite', url: 'https://vitejs.dev/' },
+  { name: 'Playwright', url: 'https://playwright.dev/' },
+];
+---
+
+<section class='mt-8 grid md:grid-cols-2 gap-8'>
+  <Card color='blue'>
+    <h2 class='text-2xl md:text-4xl lg:text-6xl mb-8 dm-serif'>
+      What's keeping me busy?
+    </h2>
+    <ul class='flex gap-4 flex-wrap'>
+      {
+        doing.map((item) => (
+          <li>
+            <TagItem>
+              <a href={item.url} target='_blank' title={`Go to ${item.name}`}>
+                {item.name}
+              </a>
+            </TagItem>
+          </li>
+        ))
+      }
+    </ul>
+  </Card>
+  <Card color='orange'>
+    <h2 class='text-2xl md:text-4xl lg:text-6xl mb-4 dm-serif'>Who am I?</h2>
+    <p class='poppins'>
+      Hi, I’m Elian, software engineer <a href="https://www.vbridge.eu/" target="_blank" title="To the vBridge website">@vBridge</a> & Ambassador <a href="https://astro.build" target="_blank" title="To the Astro website">@Astro</a>. My move for the web was first sparked in 2018 when I decided to build a simple HTML page to display the photo's I took at the time, there was no way back! Since then and there, I was completely in love with building for the web. I transitioned to a Wordpress drag-and-drop to then learning JavaScript and JAMStack development.
+    </p>
+    <p class="poppins mt-2">
+      Today, I'm mainly focussed on Full-Stack development with a love for front-end and JavaScript.
+    </p>
+    <p class="poppins mt-2">
+      I started out as a front-end engineering intern in 2020 <a href="https://www.vbridge.eu/" target="_blank" title="To the vBridge website">@vBridge</a>, where I also started getting into JavaScript frameworks. Now, I have a strong focus on design and full-stack development. Building and optimising all sorts of applications for serverless deployments and performance gains. Since 2021 I’ve been also involved in contributing to the <a href="https://astro.build" title="To the Astro website" target="_blank">Astro framework</a>, writing technical documentation & <a href="/events">giving talks and workshops</a> about the framework.
+    </p>
+  </Card>
+</section>

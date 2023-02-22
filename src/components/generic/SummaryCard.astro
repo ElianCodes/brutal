@@ -1,0 +1,42 @@
+---
+import { Image } from '@astrojs/image/components';
+
+interface Props {
+  title: string;
+  imgSrc: string;
+  imgAlt: string;
+  description: string;
+}
+
+const { title, imgAlt, imgSrc, description } = Astro.props;
+---
+
+<style>
+  div.card {
+    filter: drop-shadow(10px 10px 0 rgb(0 0 0 / 1));
+    transition: all;
+    transition-duration: 0.5s;
+    animation: ease-in-out;
+  }
+
+  div.card:hover {
+    filter: drop-shadow(5px 5px 0 rgb(0 0 0 / 1));
+  }
+</style>
+
+<div
+  class='card bg-white border-3 border-black rounded-lg p-4 h-full flex flex-col justify-between'
+>
+  <h3 class='poppins text-lg md:text-xl'>{title}</h3>
+  <div class='rounded-lg border-3 border-black my-4 h-56'>
+    <Image
+      src={imgSrc}
+      alt={imgAlt}
+      width={800}
+      height={400}
+      class='rounded h-full w-full object-cover'
+    />
+  </div>
+  <p class='poppins'>{description}</p>
+  <slot />
+</div>
