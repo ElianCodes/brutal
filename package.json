@@ -3,6 +3,12 @@
   "version": "0.0.1",
   "private": false,
   "type": "module",
+  "author": {
+    "name": "Elian Van Cutsem",
+    "email": "hello@elian.codes",
+    "url": "https://www.elian.codes/"
+  },
+  "homepage": "https://brutal.elian.codes",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
