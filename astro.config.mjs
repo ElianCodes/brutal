@@ -38,7 +38,7 @@ const getSafeList = () => {
 };
 
 export default defineConfig({
-  site: 'https://www.elian.codes/',
+  site: 'https://brutal.elian.codes/',
   trailingSlash: 'ignore',
   integrations: [
     image({
