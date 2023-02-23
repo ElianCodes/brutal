@@ -6,8 +6,8 @@ tags:
   - Astro
   - JavaScript
   - Web Development
-description: I started rebuilding my personal website from scratch in Astro again, no dependencies, no frameworks, no nothing. This to decrease technical debt and make full use of the newer Astro features.
-imgUrl: https://i.imgur.com/ezNHRa6.png
+description: Lorem markdownum longo os thyrso telum, continet servat fetus nymphae, vox nocte sedesque, decimo. Omnia esse, quam sive; conplevit illis indestrictus admovit dedit sub quod protectus, impedit non.
+imgUrl: https://i.imgur.com/iGvihVf.jpg
 layout: "../../layouts/BlogPost.astro"
 ---
 

@@ -3,11 +3,11 @@ title: Blogpost 2
 pubDate: 12/31/2022 12:05
 author: "Elian Van Cutsem"
 tags:
-  - JavaScript
-  - Recap
+  - Astro
+  - WebDev
   - Programming
-imgUrl: https://i.imgur.com/iEB1YQk.jpg
-description: 2022 was a year that flew by so fast, I've gotten amazing opportunities and a lot of lessons learned. In this post, I put them all in a list.
+imgUrl: https://i.imgur.com/iGvihVf.jpg
+description: Lorem markdownum longo os thyrso telum, continet servat fetus nymphae, vox nocte sedesque, decimo. Omnia esse, quam sive; conplevit illis indestrictus admovit dedit sub quod protectus, impedit non.
 layout: '../../layouts/BlogPost.astro'
 ---
 

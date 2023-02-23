@@ -5,9 +5,9 @@ author: "Elian Van Cutsem"
 tags:
   - JavaScript
   - Astro
-  - Talk
-imgUrl: https://i.imgur.com/zHKeWzx.jpg
-description: 9th of November, I gave a Keynote at React Global Summit. This blog post contains my slides as well as some extra accompanying speaker notes.
+  - UnoCSS
+imgUrl: https://i.imgur.com/iGvihVf.jpg
+description: Lorem markdownum longo os thyrso telum, continet servat fetus nymphae, vox nocte sedesque, decimo. Omnia esse, quam sive; conplevit illis indestrictus admovit dedit sub quod protectus, impedit non.
 layout: '../../layouts/BlogPost.astro'
 ---
 

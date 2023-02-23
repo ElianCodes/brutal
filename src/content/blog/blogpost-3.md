@@ -1,13 +1,13 @@
 ---
 title: Blogpost 3
-description: UnoCSS is an atomic-CSS engine, designed with flexibility and performance in mind, I wanted to give it a try. Let's take a look at implementing it in Astro and see how it works.
+description: Lorem markdownum longo os thyrso telum, continet servat fetus nymphae, vox nocte sedesque, decimo. Omnia esse, quam sive; conplevit illis indestrictus admovit dedit sub quod protectus, impedit non.
 pubDate: 2023-02-14 23:49
 author: Elian Van Cutsem
 tags: 
   - CSS
   - Astro
-  - UnoCSS
-imgUrl: https://repository-images.githubusercontent.com/412152628/30d80147-4535-4ff1-9837-b9015eecbb07
+  - Vite
+imgUrl: https://i.imgur.com/iGvihVf.jpg
 layout: ../../layouts/BlogPost.astro
 ---
 

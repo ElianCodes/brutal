@@ -1,13 +1,13 @@
 ---
 title: Blogpost 6
-description: A few weeks ago, I gave my first international keynote talk at JSWorld in Amsterdam. In this blogpost, I wanted to share some insights about the conference and my talk.
+description: Lorem markdownum longo os thyrso telum, continet servat fetus nymphae, vox nocte sedesque, decimo. Omnia esse, quam sive; conplevit illis indestrictus admovit dedit sub quod protectus, impedit non.
 pubDate: 2023-02-21 00:13
 author: Elian Van Cutsem
-tags: 
-  - Talk
-  - JSWorld
+tags:
+  - TypeScript
   - Astro
-imgUrl: https://i.imgur.com/2E5BGyH.jpg
+  - Web Development
+imgUrl: https://i.imgur.com/iGvihVf.jpg
 layout: ../../layouts/BlogPost.astro
 ---
 
