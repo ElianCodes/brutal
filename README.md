@@ -89,7 +89,7 @@ This directory contains all components for the home page.
 
 ### `components/layout/`
 
-This directory contains all layout components.
+This directory contains all layout components. For instance, the header and footer and `<head>` section.
 
 ### Colors
 
