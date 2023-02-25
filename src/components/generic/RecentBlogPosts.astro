@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content';
+import Button from './Button.astro';
+import BlogList from '../blog/BlogList.astro';
+import Card from './Card.astro';
+
+interface Props {
+  count?: number;
+}
+
+const { count } = Astro.props;
+
+const posts = await getCollection('blog').then((posts) =>
+  posts.reverse().slice(0, count ?? 3)
+);
+---
+
+<section class='mt-8'>
+  <Card color='red'>
+    <div class='flex justify-between items-start'>
+      <h2 class='text-2xl md:text-4xl lg:text-6xl mb-8 dm-serif'>
+        Recent Blogposts
+      </h2>
+      <div class='hidden md:block'>
+        <Button href='/blog/'>Go to blog &rarr;</Button>
+      </div>
+      <div class='block md:hidden'>
+        <Button href='/blog/'>to blog</Button>
+      </div>
+    </div>
+    <BlogList posts={posts} />
+  </Card>
+</section>

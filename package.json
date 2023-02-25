@@ -1,0 +1,41 @@
+{
+  "name": "brutal",
+  "version": "0.0.1",
+  "private": false,
+  "type": "module",
+  "author": {
+    "name": "Elian Van Cutsem",
+    "email": "hello@elian.codes",
+    "url": "https://www.elian.codes/"
+  },
+  "homepage": "https://brutal.elian.codes",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/image": "^0.15.0",
+    "@astrojs/rss": "^2.1.1",
+    "@astrojs/sitemap": "^1.0.1",
+    "@unocss/astro": "^0.49.7",
+    "astro": "^2.0.14",
+    "sharp": "^0.31.3"
+  },
+  "devDependencies": {
+    "@iconify-json/logos": "^1.1.23",
+    "@iconify-json/uil": "^1.1.4",
+    "@typescript-eslint/parser": "^5.53.0",
+    "@unocss/preset-icons": "^0.49.7",
+    "@unocss/preset-typography": "^0.49.7",
+    "@unocss/preset-wind": "^0.49.7",
+    "@unocss/reset": "^0.49.7",
+    "eslint": "^8.34.0",
+    "eslint-plugin-astro": "^0.23.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "prettier": "^2.8.4",
+    "prettier-plugin-astro": "^0.8.0"
+  }
+}

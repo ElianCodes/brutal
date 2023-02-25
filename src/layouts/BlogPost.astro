@@ -1,0 +1,18 @@
+---
+import Layout from './Default.astro';
+import BlogContent from '../components/blog/BlogContent.astro';
+import RecentBlogPosts from '../components/generic/RecentBlogPosts.astro';
+const { content } = Astro.props;
+const { title, description } = content;
+---
+
+<Layout title={title} description={description}>
+  <main class='p-6 flex justify-center'>
+    <BlogContent content={content}>
+      <slot />
+    </BlogContent>
+  </main>
+  <section class='p-6'>
+    <RecentBlogPosts count={6} />
+  </section>
+</Layout>

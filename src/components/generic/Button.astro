@@ -1,0 +1,33 @@
+---
+interface Props {
+  href: string;
+  color?: string;
+  blank?: boolean;
+}
+
+const colors = ['red', 'green', 'blue', 'yellow', 'purple', 'pink'];
+
+const { href, color, blank } = Astro.props;
+---
+
+<style>
+  a.btn {
+    filter: drop-shadow(5px 5px 0 rgb(0 0 0 / 1));
+  }
+  a.btn:hover {
+    filter: drop-shadow(3px 3px 0 rgb(0 0 0 / 1));
+  }
+</style>
+
+<a
+  href={href}
+  target={blank ? '_blank' : '_self'}
+  class:list={[
+    color
+      ? `hover:bg-${color}`
+      : `hover:bg-${colors[Math.floor(Math.random() * colors.length)]}`,
+    'btn bg-white sanchez inline-block py-2 px-4 border-2 border-black transition-all ease-in-out duration-150',
+  ]}
+>
+  <slot />
+</a>

@@ -1,0 +1,50 @@
+---
+interface Props {
+  title: string;
+  description: string;
+}
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+const { title, description } = Astro.props;
+---
+
+<head>
+  <meta charset='utf-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <meta name='generator' content={Astro.generator} />
+
+  <link
+    rel='alternate'
+    href='https://brutal.elian.codes/blog.xml'
+    type='application/rss+xml'
+  />
+
+  <meta name='title' content={`Brutal Theme | ${title}`} />
+  <meta name='description' content={description} />
+
+  <meta property='og:type' content='website' />
+  <meta property='og:url' content={canonicalURL} />
+  <meta property='og:title' content={title} />
+  <meta property='og:description' content={description} />
+
+  <meta property='twitter:card' content='summary_large_image' />
+  <meta property='twitter:url' content={canonicalURL} />
+  <meta property='twitter:title' content={title} />
+  <meta property='twitter:description' content={description} />
+
+  <link rel='canonical' href={canonicalURL} />
+  <link rel='icon' type='image/x-icon' href='/favicon.ico' />
+
+  <title>Brutal Theme | {title}</title>
+
+  <!-- fonts -->
+  <link rel='preconnect' href='https://fonts.googleapis.com' />
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+  <link
+    href='https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Fredoka+One&family=Outfit:wght@400;500&family=Poppins:wght@300;400;500&family=Righteous&family=Sanchez&display=swap'
+    rel='stylesheet'
+  />
+
+  <slot />
+</head>

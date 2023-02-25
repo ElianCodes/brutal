@@ -1,0 +1,20 @@
+---
+const colors = ['red', 'green', 'blue', 'yellow', 'purple', 'pink'];
+---
+
+<style>
+  span.tag {
+    filter: drop-shadow(3px 3px 0 rgb(0 0 0 / 1));
+  }
+  span.tag:hover {
+    filter: drop-shadow(5px 5px 0 rgb(0 0 0 / 1));
+  }
+</style>
+<span
+  class:list={[
+    `hover:bg-${colors[Math.floor(Math.random() * colors.length)]}`,
+    'select-none bg-white tag sanchez rounded-full border-2 border-black px-4 py-1 text-sm transition-all ease-in-out duration-150',
+  ]}
+>
+  <slot />
+</span>
