@@ -1,13 +1,15 @@
 ---
 import Layout from './Default.astro';
+import BlogSideBar from '../components/blog/BlogSideBar.astro';
 import BlogContent from '../components/blog/BlogContent.astro';
 import RecentBlogPosts from '../components/generic/RecentBlogPosts.astro';
-const { content } = Astro.props;
+const { content, headings } = Astro.props;
 const { title, description } = content;
 ---
 
 <Layout title={title} description={description}>
-  <main class='p-6 flex justify-center'>
+  <main class='p-6 lg:grid lg:grid-cols-3 flex justify-center'>
+    <BlogSideBar headings={headings} />
     <BlogContent content={content}>
       <slot />
     </BlogContent>
