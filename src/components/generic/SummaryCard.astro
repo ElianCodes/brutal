@@ -1,6 +1,4 @@
 ---
-import { Image } from '@astrojs/image/components';
-
 interface Props {
   title: string;
   imgSrc: string;
@@ -29,7 +27,7 @@ const { title, imgAlt, imgSrc, description } = Astro.props;
 >
   <h3 class='poppins text-lg md:text-xl'>{title}</h3>
   <div class='rounded-lg border-3 border-black my-4 h-56'>
-    <Image
+    <img
       src={imgSrc}
       alt={imgAlt}
       width={800}

@@ -1,5 +1,4 @@
 import { defineConfig } from 'astro/config';
-import image from '@astrojs/image';
 import sitemap from '@astrojs/sitemap';
 import unocss from '@unocss/astro';
 import presetIcons from '@unocss/preset-icons';
@@ -41,9 +40,6 @@ export default defineConfig({
   site: 'https://brutal.elian.codes/',
   trailingSlash: 'ignore',
   integrations: [
-    image({
-      serviceEntryPoint: '@astrojs/image/sharp',
-    }),
     sitemap(),
     unocss({
       presets: [
