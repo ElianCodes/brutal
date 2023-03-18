@@ -18,7 +18,7 @@ npx create astro@latest --template eliancodes/brutal
 npx create astro@latest -- --template eliancodes/brutal
 
 # pnpm
-pnpx create-astro --template eliancodes/brutal
+pnpm dlx create-astro --template eliancodes/brutal
 
 # yarn
 yarn create astro --template eliancodes/brutal
