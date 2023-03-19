@@ -2,7 +2,7 @@
 import Layout from '../layouts/Default.astro';
 import RecentBlogPosts from '../components/generic/RecentBlogPosts.astro';
 import MobileSocials from '../components/home/MobileSocials.astro';
-import TagItem from '../components/blog/TagItem.astro';
+import { Pill } from '@eliancodes/brutal-ui';
 import { Button } from '@eliancodes/brutal-ui';
 import { Card } from '@eliancodes/brutal-ui';
 
@@ -60,15 +60,16 @@ const builtWith = [
             {
               builtWith.map((item) => (
                 <li>
-                  <TagItem>
+                  <Pill>
                     <a
+                      class="sanchez"
                       href={item.url}
                       target='_blank'
                       title={`Go to ${item.name}`}
                     >
                       {item.name}
                     </a>
-                  </TagItem>
+                  </Pill>
                 </li>
               ))
             }
