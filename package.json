@@ -20,9 +20,11 @@
     "@astrojs/image": "^0.15.0",
     "@astrojs/rss": "^2.1.1",
     "@astrojs/sitemap": "^1.0.1",
-    "@eliancodes/brutal-ui": "^0.1.1",
+    "@eliancodes/brutal-ui": "^0.2.0",
     "@unocss/astro": "^0.49.7",
-    "astro": "^2.0.14"
+    "astro": "^2.0.14",
+    "satori": "^0.4.3",
+    "satori-html": "^0.3.2"
   },
   "devDependencies": {
     "@iconify-json/logos": "^1.1.23",
