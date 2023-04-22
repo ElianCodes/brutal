@@ -38,6 +38,7 @@
     "eslint-plugin-astro": "^0.23.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "prettier": "^2.8.4",
-    "prettier-plugin-astro": "^0.8.0"
+    "prettier-plugin-astro": "^0.8.0",
+    "unocss": "^0.51.6"
   }
 }
