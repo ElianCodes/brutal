@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
-import unocss from '@unocss/astro';
+import UnoCSS from 'unocss/astro';
 
 export default defineConfig({
   // used to generate images
@@ -11,5 +11,5 @@ export default defineConfig({
       ? `https://${process.env.VERCEL_URL}/`
       : 'https://localhost:3001/',
   trailingSlash: 'ignore',
-  integrations: [sitemap(), unocss()],
+  integrations: [sitemap(), UnoCSS({ injectReset: true })],
 });
