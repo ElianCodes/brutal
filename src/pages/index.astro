@@ -1,7 +1,7 @@
 ---
-import Layout from '../layouts/Default.astro';
-import RecentBlogPosts from '../components/generic/RecentBlogPosts.astro';
-import MobileSocials from '../components/home/MobileSocials.astro';
+import Layout from '@layouts/Default.astro';
+import RecentBlogPosts from '@components/generic/RecentBlogPosts.astro';
+import MobileSocials from '@components/home/MobileSocials.astro';
 import { Pill } from '@eliancodes/brutal-ui';
 import { Button } from '@eliancodes/brutal-ui';
 import { Card } from '@eliancodes/brutal-ui';
@@ -62,7 +62,7 @@ const builtWith = [
                 <li>
                   <Pill>
                     <a
-                      class="sanchez"
+                      class='sanchez'
                       href={item.url}
                       target='_blank'
                       title={`Go to ${item.name}`}
