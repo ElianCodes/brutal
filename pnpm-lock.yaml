@@ -15,8 +15,8 @@ dependencies:
     specifier: ^1.3.3
     version: 1.3.3
   '@eliancodes/brutal-ui':
-    specifier: ^0.2.1
-    version: 0.2.1
+    specifier: ^0.2.2
+    version: 0.2.2
   astro:
     specifier: ^2.6.1
     version: 2.6.1
@@ -431,8 +431,8 @@ packages:
       to-fast-properties: 2.0.0
     dev: false
 
-  /@eliancodes/brutal-ui@0.2.1:
-    resolution: {integrity: sha512-0gSJz2+X175nAoxgh8wyWbV6aJa9p0iEpUZprbqUasIlxPdHl/T9DUaoKjk9axwxV6dNrLPH2DRYCgUBCuF2LQ==}
+  /@eliancodes/brutal-ui@0.2.2:
+    resolution: {integrity: sha512-tjNfXpcrK3WjfNSHeqJ4sHqVxEJjqyAZQ7gQ5Q7W2D0gBxAVo1TM2MGiOEfEzRbOAvc5aDUoaSAJ/sqPnNyR+A==}
     dev: false
 
   /@emmetio/abbreviation@2.3.3:
