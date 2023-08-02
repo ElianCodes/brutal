@@ -13,7 +13,7 @@ const width = 1200;
 
 export const get: APIRoute = async () => {
   const bgColor =
-    Config().colors[Math.floor(Math.random() * Config().colors.length)];
+    Config.colors[Math.floor(Math.random() * Config.colors.length)];
   // console.log(request);
   const title = 'Brutal, a theme for Astro.';
   const link = 'https://brutal.elian.codes';

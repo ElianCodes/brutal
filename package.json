@@ -3,6 +3,7 @@
   "version": "0.1.3",
   "private": false,
   "type": "module",
+  "packageManager": "pnpm@8.6.0",
   "author": {
     "name": "Elian Van Cutsem",
     "email": "hello@elian.codes",
