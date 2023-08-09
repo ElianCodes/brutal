@@ -18,24 +18,24 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/image": "^0.17.2",
-    "@astrojs/rss": "^2.4.3",
+    "@astrojs/image": "^0.17.3",
+    "@astrojs/rss": "^2.4.4",
     "@astrojs/sitemap": "^2.0.1",
     "@eliancodes/brutal-ui": "^0.2.2",
-    "astro": "^2.9.7",
+    "astro": "^2.10.3",
     "satori": "^0.5.0",
     "satori-html": "^0.3.2"
   },
   "devDependencies": {
-    "@iconify-json/logos": "^1.1.33",
-    "@iconify-json/uil": "^1.1.4",
-    "@typescript-eslint/parser": "^6.2.1",
-    "@unocss/reset": "^0.54.1",
+    "@iconify-json/logos": "^1.1.34",
+    "@iconify-json/uil": "^1.1.5",
+    "@typescript-eslint/parser": "^6.3.0",
+    "@unocss/reset": "^0.54.3",
     "eslint": "^8.46.0",
     "eslint-plugin-astro": "^0.28.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",
-    "prettier": "^3.0.0",
+    "prettier": "^3.0.1",
     "prettier-plugin-astro": "^0.11.0",
-    "unocss": "^0.54.1"
+    "unocss": "^0.54.3"
   }
 }
