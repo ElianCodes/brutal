@@ -34,7 +34,6 @@ const { title, description, ogImage } = Astro.props;
   <meta property='og:description' content={description} />
   <meta property='og:image' content={ogImage} />
 
-
   <meta property='twitter:card' content='summary_large_image' />
   <meta property='twitter:url' content={canonicalURL} />
   <meta property='twitter:title' content={title} />
@@ -45,13 +44,6 @@ const { title, description, ogImage } = Astro.props;
   <link rel='icon' type='image/svg' href='/favicon.svg' />
 
   <title>Brutal Theme | {title}</title>
-
-  <!-- fonts -->
-  <link rel="preconnect" href="https://fonts.bunny.net">
-  <link
-    href='https://fonts.bunny.net/css2?family=DM+Serif+Text&family=Fredoka+One&family=Outfit:wght@400;500&family=Poppins:wght@300;400;500&family=Righteous&family=Sanchez&display=swap'
-    rel='stylesheet'
-  />
 
   <slot />
 </head>
