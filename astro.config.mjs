@@ -15,4 +15,9 @@ export default defineConfig({
       : 'https://localhost:3000/',
   trailingSlash: 'ignore',
   integrations: [sitemap(), UnoCSS({ injectReset: true })],
+  vite: {
+    optimizeDeps: {
+      exclude: ['@resvg/resvg-js'],
+    },
+  },
 });
