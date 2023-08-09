@@ -10,7 +10,11 @@ const { content, headings } = Astro.props;
 const { title, description } = content;
 ---
 
-<Layout title={title} description={description} ogImage={ogImage}>
+<Layout
+  title={title as string}
+  description={description as string}
+  ogImage={ogImage}
+>
   <main class='p-6 lg:grid lg:grid-cols-3 flex justify-center'>
     <BlogSideBar headings={headings} />
     <BlogContent content={content}>

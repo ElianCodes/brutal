@@ -1,4 +1,8 @@
 ---
+interface Props {
+  pageTitle?: string;
+}
+
 const navigationItems = [
   { name: 'Home', url: '/' },
   { name: 'Blog', url: '/blog/' },
@@ -17,10 +21,6 @@ const socialIcons = [
   },
   { name: 'RSS', url: '/feed.xml', icon: 'i-uil-rss' },
 ];
-
-interface Props {
-  pageTitle?: string;
-}
 
 const { pageTitle } = Astro.props;
 ---

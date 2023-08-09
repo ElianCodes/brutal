@@ -12,7 +12,7 @@ const { headings } = Astro.props;
       {
         headings.map((heading: any) => (
           <li class='py-1'>
-            {[...Array(heading.depth - 1)].map((_, i) => (
+            {[...Array(heading.depth - 1)].map((_, _i) => (
               <span class='inline-block w-4' />
             ))}
             <a
