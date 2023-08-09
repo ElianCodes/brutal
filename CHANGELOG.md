@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/ElianCodes/brutal/compare/v0.2.0...v0.2.1) (2023-08-09)
+
+
+### Bug Fixes
+
+* solve OG image generation ([bdcfe8c](https://github.com/ElianCodes/brutal/commit/bdcfe8c11c99ffe144235284de6a1c06dc481dab))
+
 ## 0.2.0 (2023-08-09)
 
 

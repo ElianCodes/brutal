@@ -1,6 +1,6 @@
 {
   "name": "brutal",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": false,
   "type": "module",
   "packageManager": "pnpm@8.6.0",
