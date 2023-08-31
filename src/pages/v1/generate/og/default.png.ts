@@ -1,4 +1,4 @@
-import { Resvg, ResvgRenderOptions } from '@resvg/resvg-js';
+import { Resvg, type ResvgRenderOptions } from '@resvg/resvg-js';
 import type { APIRoute } from 'astro';
 import satori from 'satori';
 import { html as toReactElement } from 'satori-html';
@@ -12,7 +12,7 @@ const fontData: ArrayBuffer = await fontFile.arrayBuffer();
 const height = 630;
 const width = 1200;
 
-export const get: APIRoute = async () => {
+export const GET: APIRoute = async () => {
   const link = 'https://brutal.elian.codes';
   const html = toReactElement(`
   <div style="background-color: white; display: flex; flex-direction: column; height: 100%; padding: 3rem; width: 100%">
