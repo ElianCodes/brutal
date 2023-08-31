@@ -65,6 +65,27 @@
   filter: drop-shadow(5px 5px 0 rgb(0 0 0 / 1));
 }
 
+body {
+  --sb-track-color: #232E33;
+  --sb-thumb-color: #0d1117;
+  --sb-size: 0.5em;
+
+  scrollbar-color: var(--sb-thumb-color) 
+                   var(--sb-track-color);
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size) 
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);  
+  }
+
 html {
   scroll-behavior: smooth;
 }
