@@ -1,6 +1,6 @@
 {
   "name": "brutal",
-  "version": "0.2.1",
+  "version": "1.1.0",
   "private": false,
   "type": "module",
   "packageManager": "pnpm@8.6.0",
@@ -18,10 +18,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/rss": "^2.4.4",
-    "@astrojs/sitemap": "^2.0.1",
+    "@astrojs/rss": "^3.0.0",
+    "@astrojs/sitemap": "^3.0.0",
     "@eliancodes/brutal-ui": "^0.2.2",
-    "astro": "^2.10.3",
+    "astro": "^3.0.4",
     "satori": "^0.5.0",
     "satori-html": "^0.3.2"
   },
@@ -30,12 +30,13 @@
     "@iconify-json/uil": "^1.1.5",
     "@resvg/resvg-js": "^2.4.1",
     "@typescript-eslint/parser": "^6.3.0",
-    "@unocss/reset": "^0.54.3",
+    "@unocss/reset": "^0.55.4",
     "eslint": "^8.46.0",
     "eslint-plugin-astro": "^0.28.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "prettier": "^3.0.1",
     "prettier-plugin-astro": "^0.11.0",
-    "unocss": "^0.54.3"
+    "sharp": "^0.32.5",
+    "unocss": "^0.55.4"
   }
 }

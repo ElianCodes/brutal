@@ -1,4 +1,6 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
+
 interface Props {
   title: string;
   description: string;
@@ -44,6 +46,8 @@ const { title, description, ogImage } = Astro.props;
   <link rel='icon' type='image/svg' href='/favicon.svg' />
 
   <title>Brutal Theme | {title}</title>
+
+  <ViewTransitions />
 
   <slot />
 </head>
