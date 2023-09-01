@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/ElianCodes/brutal/compare/v1.1.0...v1.2.0) (2023-09-01)
+
+
+### Features
+
+* add styled scrollbar ([b3b2cf4](https://github.com/ElianCodes/brutal/commit/b3b2cf4c9a7a865d06e9a3450472e834c2b9c01b))
+
 ## [1.1.0](https://github.com/ElianCodes/brutal/compare/v1.0.1...v1.1.0) (2023-08-31)
 
 
