@@ -65,26 +65,75 @@
   filter: drop-shadow(5px 5px 0 rgb(0 0 0 / 1));
 }
 
-body {
-  --sb-track-color: #232E33;
-  --sb-thumb-color: #0d1117;
-  --sb-size: 0.5em;
 
-  scrollbar-color: var(--sb-thumb-color) 
-                   var(--sb-track-color);
+::-webkit-scrollbar {
+  width: 22px;
+  background-color: var(--primary);
 }
 
-body::-webkit-scrollbar {
-  width: var(--sb-size) 
+::-webkit-scrollbar-track {
+  background: linear-gradient(45deg, var(--secondary) 25%, transparent 25%, transparent 75%, var(--secondary) 75%, var(--secondary)), linear-gradient(45deg, var(--secondary) 25%, transparent 25%, transparent 75%, var(--secondary) 75%, var(--secondary));
+  background-color: var(--primary);
+  background-size: 4px 4px;
+  background-position: 0 0, 2px 2px;
+  width: 10px;
+  border-left: 3px solid var(--secondary);
 }
 
-body::-webkit-scrollbar-track {
-  background: var(--sb-track-color);
+::-webkit-scrollbar-thumb {
+  width: 20px;
+  box-sizing: content-box;
+  background-color: var(--primary);
+  border: 2px solid var(--secondary);
+  border-right: none;
 }
 
-body::-webkit-scrollbar-thumb {
-  background: var(--sb-thumb-color);  
-  }
+::-webkit-scrollbar-button:horizontal:start:decrement,
+::-webkit-scrollbar-button:horizontal:end:increment,
+::-webkit-scrollbar-button:vertical:start:decrement,
+::-webkit-scrollbar-button:vertical:end:increment {
+  display: block;
+}
+
+::-webkit-scrollbar-button:vertical:start {
+  background-repeat: no-repeat;
+  height: 23.38px;
+  background-image: svg-load("/icon/scrollbar-up.svg");
+}
+::-webkit-scrollbar-button:vertical:start:active {
+  background-repeat: no-repeat;
+  height: 23.38px;
+  background-image: svg-load("/icon/scrollbar-up-active.svg");
+}
+::-webkit-scrollbar-button:vertical:end {
+  height: 23.38px;
+  background-image: svg-load("icon/scrollbar-down.svg");
+}
+::-webkit-scrollbar-button:vertical:end:active {
+  background-repeat: no-repeat;
+  height: 23.38px;
+  background-image: svg-load("/icon/scrollbar-down-active.svg");
+}
+
+::-webkit-scrollbar-button:horizontal:start {
+  background-repeat: no-repeat;
+  height: 23.38px;
+  background-image: svg-load("/icon/scrollbar-left.svg");
+}
+::-webkit-scrollbar-button:horizontal:start:active {
+  background-repeat: no-repeat;
+  height: 23.38px;
+  background-image: svg-load("/icon/scrollbar-left-active.svg");
+}
+::-webkit-scrollbar-button:horizontal:end {
+  height: 23.38px;
+  background-image: svg-load("/icon/scrollbar-right.svg");
+}
+::-webkit-scrollbar-button:horizontal:end:active {
+  background-repeat: no-repeat;
+  height: 23.38px;
+  background-image: svg-load("/icon/scrollbar-right-active.svg");
+}
 
 html {
   scroll-behavior: smooth;
