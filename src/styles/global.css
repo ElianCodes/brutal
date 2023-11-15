@@ -65,6 +65,16 @@
   filter: drop-shadow(5px 5px 0 rgb(0 0 0 / 1));
 }
 
+:root 
+{  /* ---- ⚫️ Colors ⚪️ ---- */
+  /* Base Tokens */
+  --sys-color-white: #FFFFFF;
+  --sys-color-black: #000000;
+
+  /* Theme Tokens */
+  --primary: var(--sys-color-white);
+  --secondary: var(--sys-color-black);
+}
 
 html {
   scroll-behavior: smooth;
