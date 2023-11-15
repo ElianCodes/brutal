@@ -66,6 +66,10 @@
 }
 
 
+html {
+  scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar {
   width: 22px;
   background-color: var(--primary);
@@ -107,7 +111,7 @@
 }
 ::-webkit-scrollbar-button:vertical:end {
   height: 23.38px;
-  background-image: svg-load("icon/scrollbar-down.svg");
+  background-image: svg-load("/icon/scrollbar-down.svg");
 }
 ::-webkit-scrollbar-button:vertical:end:active {
   background-repeat: no-repeat;
@@ -118,29 +122,29 @@
 ::-webkit-scrollbar-button:horizontal:start {
   background-repeat: no-repeat;
   height: 23.38px;
-  background-image: svg-load("/icon/scrollbar-left.svg");
+  background-image: svg-load("icon/scrollbar-left.svg");
 }
 ::-webkit-scrollbar-button:horizontal:start:active {
   background-repeat: no-repeat;
   height: 23.38px;
-  background-image: svg-load("/icon/scrollbar-left-active.svg");
+  background-image: svg-load("icon/scrollbar-left-active.svg");
 }
 ::-webkit-scrollbar-button:horizontal:end {
   height: 23.38px;
-  background-image: svg-load("/icon/scrollbar-right.svg");
+  background-image: svg-load("icon/scrollbar-right.svg");
 }
 ::-webkit-scrollbar-button:horizontal:end:active {
   background-repeat: no-repeat;
   height: 23.38px;
-  background-image: svg-load("/icon/scrollbar-right-active.svg");
+  background-image: svg-load("icon/scrollbar-right-active.svg");
 }
+
 
 .window-pane::-webkit-scrollbar {
   width: 22px;
   background-color: var(--primary);
 }
-
-::-webkit-scrollbar-track {
+.window-pane::-webkit-scrollbar-track {
   background: linear-gradient(45deg, var(--secondary) 25%, transparent 25%, transparent 75%, var(--secondary) 75%, var(--secondary)), linear-gradient(45deg, var(--secondary) 25%, transparent 25%, transparent 75%, var(--secondary) 75%, var(--secondary));
   background-color: var(--primary);
   background-size: 4px 4px;
@@ -148,7 +152,7 @@
   width: 10px;
   border-left: 4px solid var(--secondary);
 }
-::-webkit-scrollbar-thumb {
+.window-pane::-webkit-scrollbar-thumb {
   width: 20px;
   box-sizing: content-box;
   background-color: var(--primary);
@@ -159,8 +163,4 @@
 ::selection
 {
   background-color: aliceblue;
-}
-
-html {
-  scroll-behavior: smooth;
 }
