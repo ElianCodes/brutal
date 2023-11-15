@@ -135,6 +135,32 @@
   background-image: svg-load("/icon/scrollbar-right-active.svg");
 }
 
+.window-pane::-webkit-scrollbar {
+  width: 22px;
+  background-color: var(--primary);
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(45deg, var(--secondary) 25%, transparent 25%, transparent 75%, var(--secondary) 75%, var(--secondary)), linear-gradient(45deg, var(--secondary) 25%, transparent 25%, transparent 75%, var(--secondary) 75%, var(--secondary));
+  background-color: var(--primary);
+  background-size: 4px 4px;
+  background-position: 0 0, 2px 2px;
+  width: 10px;
+  border-left: 4px solid var(--secondary);
+}
+::-webkit-scrollbar-thumb {
+  width: 20px;
+  box-sizing: content-box;
+  background-color: var(--primary);
+  border: 2px solid var(--secondary);
+  border-right: none;
+}
+
+::selection
+{
+  background-color: aliceblue;
+}
+
 html {
   scroll-behavior: smooth;
 }
