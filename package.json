@@ -18,11 +18,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/rss": "^3.0.0",
+    "@astrojs/rss": "^4.0.0",
     "@astrojs/sitemap": "^3.0.3",
     "@eliancodes/brutal-ui": "^0.2.2",
     "@unocss/astro": "^0.57.2",
-    "astro": "^3.4.3",
+    "astro": "^4.0.0",
     "satori": "^0.5.0",
     "satori-html": "^0.3.2"
   },
