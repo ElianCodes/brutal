@@ -1,5 +1,7 @@
 # Brutal - The neobrutalist Astro theme
 
+Please Note that this is a shameless copy from the Brutal Theme from @ElianCodes. I'm just playing around with it to swap UnoCSS with PandaCSS.
+
 Brutal is a minimal neobrutalist theme for [Astro](https://astro.build/). It's based on Neobrutalist Web Design, a movement that aims to create websites with a minimalistic and functional design. It has some integrations like Image Optimization, RSS, Sitemap, ready to get your SEO done right.
 
 The theme has no JavaScript integration out of the box, but can always be added of course.
