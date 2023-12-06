@@ -1,3 +1,6 @@
 .astro
 node_modules
 dist
+
+# Ignore Panda Styled System
+styled-system

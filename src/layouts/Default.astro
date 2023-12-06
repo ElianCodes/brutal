@@ -3,6 +3,7 @@ import BaseNavigation from '@components/layout/BaseNavigation.astro';
 import BaseFooter from '@components/layout/BaseFooter.astro';
 import BaseHead from '../components/layout/BaseHead.astro';
 import '../styles/global.css';
+import { css } from '@styled-system/css';
 
 interface Props {
   title: string;
@@ -15,7 +16,7 @@ interface Props {
 const { title, description, classList, pageTitle, ogImage } = Astro.props;
 ---
 
-<html lang='en' class='h-full'>
+<html lang='en' class={css({ height: "full"})}>
   <BaseHead ogImage={ogImage} title={title} description={description} />
 
   <body class:list={[classList]}>

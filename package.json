@@ -11,6 +11,7 @@
   },
   "homepage": "https://brutal.elian.codes",
   "scripts": {
+    "prepare": "panda codegen",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
@@ -29,6 +30,8 @@
   "devDependencies": {
     "@iconify-json/logos": "^1.1.37",
     "@iconify-json/uil": "^1.1.5",
+    "@pandacss/astro": "^0.20.1",
+    "@pandacss/dev": "^0.20.1",
     "@resvg/resvg-js": "^2.6.0",
     "@typescript-eslint/parser": "^6.9.1",
     "@unocss/reset": "^0.57.2",
