@@ -18,8 +18,8 @@ dependencies:
     specifier: ^0.57.2
     version: 0.57.2(vite@4.5.0)
   astro:
-    specifier: ^4.0.0
-    version: 4.0.0(typescript@5.2.2)
+    specifier: ^4.0.2
+    version: 4.0.2(typescript@5.2.2)
   satori:
     specifier: ^0.5.0
     version: 0.5.0
@@ -63,7 +63,7 @@ devDependencies:
     version: 0.32.6
   unocss:
     specifier: ^0.57.2
-    version: 0.57.2(postcss@8.4.31)(vite@4.5.0)
+    version: 0.57.2(postcss@8.4.32)(vite@4.5.0)
 
 packages:
 
@@ -105,13 +105,13 @@ packages:
     resolution: {integrity: sha512-06DD2ZnItMwUnH81LBLco3tWjcZ1lGU9rLCCBaeUCGYe9cI0wKyY2W3kDyoW1I6GmcWgt1fu+D1CTvz+FIKf8A==}
     dev: false
 
-  /@astrojs/markdown-remark@4.0.0(astro@4.0.0):
+  /@astrojs/markdown-remark@4.0.0(astro@4.0.2):
     resolution: {integrity: sha512-JSrn49fJGuH/0S2TTGxLK7bNDspOakJWZVFHeP+IDFjWdghT4HtsTShS2EiISNx3zfOFBAwy5Cj4xT4U5BWNeA==}
     peerDependencies:
       astro: ^4.0.0-beta.0
     dependencies:
       '@astrojs/prism': 3.0.0
-      astro: 4.0.0(typescript@5.2.2)
+      astro: 4.0.2(typescript@5.2.2)
       github-slugger: 2.0.0
       import-meta-resolve: 4.0.0
       mdast-util-definitions: 6.0.0
@@ -1390,7 +1390,7 @@ packages:
       gzip-size: 6.0.0
       sirv: 2.0.3
 
-  /@unocss/postcss@0.57.2(postcss@8.4.31):
+  /@unocss/postcss@0.57.2(postcss@8.4.32):
     resolution: {integrity: sha512-OygjXgHkBPCQ6rc7Zo5vd2KDn4XUikTA1knz67oSiPFZLjUmmhzMc/XtckBITzougMNktv1qH1vECGAbKx+FNA==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -1402,7 +1402,7 @@ packages:
       css-tree: 2.3.1
       fast-glob: 3.3.1
       magic-string: 0.30.5
-      postcss: 8.4.31
+      postcss: 8.4.32
     dev: true
 
   /@unocss/preset-attributify@0.57.2:
@@ -1691,14 +1691,14 @@ packages:
       - supports-color
     dev: true
 
-  /astro@4.0.0(typescript@5.2.2):
-    resolution: {integrity: sha512-18VcFYBEIMBHHnKrebncvJirNg2WiSOuoOg5BAVDvl23YhF/qYenN6Hz/zxqiWY7nQGr2hbC2YZkbU7lm9iMZg==}
+  /astro@4.0.2(typescript@5.2.2):
+    resolution: {integrity: sha512-ee7tGS53ZcKjorxTy6VEapIGwRA3rzSUAEXYhuchGppFxykObCbzJv5o3x8G2lvHm4g7Mn83OFrvNlwjYjsXnQ==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
     dependencies:
       '@astrojs/compiler': 2.3.2
       '@astrojs/internal-helpers': 0.2.1
-      '@astrojs/markdown-remark': 4.0.0(astro@4.0.0)
+      '@astrojs/markdown-remark': 4.0.0(astro@4.0.2)
       '@astrojs/telemetry': 3.0.4
       '@babel/core': 7.23.5
       '@babel/generator': 7.23.5
@@ -4426,6 +4426,7 @@ packages:
       nanoid: 3.3.7
       picocolors: 1.0.0
       source-map-js: 1.0.2
+    dev: true
 
   /postcss@8.4.32:
     resolution: {integrity: sha512-D/kj5JNu6oo2EIy+XL/26JEDTlIbB8hw85G8StOE6L74RQAVVP5rej6wxCNqyMbR4RkPfqvezVbPw81Ngd6Kcw==}
@@ -4434,7 +4435,6 @@ packages:
       nanoid: 3.3.7
       picocolors: 1.0.0
       source-map-js: 1.0.2
-    dev: false
 
   /prebuild-install@7.1.1:
     resolution: {integrity: sha512-jAXscXWMcCK8GgCoHOfIr0ODh5ai8mj63L2nWrjuAgXE6tDyYGnx4/8o/rCgU+B4JSyZBKbeZqzhtwtC3ovxjw==}
@@ -5438,7 +5438,7 @@ packages:
       unist-util-visit-parents: 6.0.1
     dev: false
 
-  /unocss@0.57.2(postcss@8.4.31)(vite@4.5.0):
+  /unocss@0.57.2(postcss@8.4.32)(vite@4.5.0):
     resolution: {integrity: sha512-Wmh/a+iXSaDnf6KCf0JtzZ9AoY//fxXLadiXvuTuM4aGEcItHzgt0IeZPs4+ab60usebQBsDyWV5Yr/lgiQ4bQ==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -5454,7 +5454,7 @@ packages:
       '@unocss/cli': 0.57.2
       '@unocss/core': 0.57.2
       '@unocss/extractor-arbitrary-variants': 0.57.2
-      '@unocss/postcss': 0.57.2(postcss@8.4.31)
+      '@unocss/postcss': 0.57.2(postcss@8.4.32)
       '@unocss/preset-attributify': 0.57.2
       '@unocss/preset-icons': 0.57.2
       '@unocss/preset-mini': 0.57.2
@@ -5569,7 +5569,7 @@ packages:
         optional: true
     dependencies:
       esbuild: 0.18.20
-      postcss: 8.4.31
+      postcss: 8.4.32
       rollup: 3.29.4
     optionalDependencies:
       fsevents: 2.3.3
