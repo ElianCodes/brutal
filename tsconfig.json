@@ -7,6 +7,7 @@
       "@components/*": ["src/components/*"],
       "@layouts/*": ["src/layouts/*"],
       "@pages/*": ["src/pages/*"],
+      "@styles/*": ["src/styles/*"],
       "@styled-system/*": ["styled-system/*"],
     }
   }

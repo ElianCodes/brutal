@@ -1,4 +1,7 @@
 import { defineConfig } from "@pandacss/dev";
+import { brutalCardRecipe } from "./src/styles/panda-recipes/Card";
+import { brutalPillRecipe } from "./src/styles/panda-recipes/Pill";
+import colors from "./src/styles/panda-tokens/colors";
 
 export default defineConfig({
   // Whether to use css reset
@@ -12,7 +15,17 @@ export default defineConfig({
 
   // Useful for theme customization
   theme: {
-    extend: {},
+    tokens: {
+      colors: {
+        ...colors
+      }
+    },
+    extend: {
+      recipes: {
+        brutalCard: brutalCardRecipe,
+        brutalPill: brutalPillRecipe,
+      }
+    },
   },
 
   // The output directory for your css system

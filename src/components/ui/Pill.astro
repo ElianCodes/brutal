@@ -1,0 +1,21 @@
+---
+interface Props {
+  color?: keyof typeof colorTokens | string;
+}
+import { brutalPill } from '@styled-system/recipes'
+import { token, type Token } from '@styled-system/tokens'
+import colorTokens from '@styles/panda-tokens/colors'
+
+if (Astro.props.color === undefined) {
+  Astro.props.color =
+  Object.keys(colorTokens)[Math.floor(Math.random() * Object.keys(colorTokens).length)];
+}
+
+
+const { color } = Astro.props;
+---
+<div class={brutalPill()} style={{
+  '--color': token(`colors.${color}` as Token)
+}}>
+  <slot />
+</div>
