@@ -1,0 +1,32 @@
+---
+interface Props {
+  href: string;
+  target?: '_blank' | '_self';
+  color?: keyof typeof colorTokens | string;
+}
+
+import { brutalButton } from '@styled-system/recipes'
+import { token, type Token } from '@styled-system/tokens'
+import colorTokens from '@styles/panda-tokens/colors'
+
+if (Astro.props.target === undefined) {
+  Astro.props.target = '_self';
+}
+
+if (Astro.props.color === undefined) {
+  Astro.props.color =
+  Object.keys(colorTokens)[Math.floor(Math.random() * Object.keys(colorTokens).length)];
+}
+
+const { href, target, color } = Astro.props;
+---
+
+<a
+  href={href}
+  target={target}
+  class={brutalButton()} style={{
+    '--color': token(`colors.${color}` as Token)
+  }}
+>
+  <slot />
+</a>

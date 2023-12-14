@@ -1,6 +1,8 @@
 import { defineConfig } from "@pandacss/dev";
 import { brutalCardRecipe } from "./src/styles/panda-recipes/Card";
 import { brutalPillRecipe } from "./src/styles/panda-recipes/Pill";
+import { brutalButtonRecipe } from "@styles/panda-recipes/Button";
+
 import colors from "./src/styles/panda-tokens/colors";
 
 export default defineConfig({
@@ -24,6 +26,7 @@ export default defineConfig({
       recipes: {
         brutalCard: brutalCardRecipe,
         brutalPill: brutalPillRecipe,
+        brutalButton: brutalButtonRecipe,
       }
     },
   },
