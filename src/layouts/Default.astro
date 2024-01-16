@@ -21,6 +21,6 @@ const { title, description, classList, pageTitle, ogImage } = Astro.props;
   <body class:list={[classList]}>
     <BaseNavigation {pageTitle} />
     <slot />
-    <BaseFooter />
+    <BaseFooter backToTop={true} />
   </body>
 </html>
