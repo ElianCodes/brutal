@@ -1,0 +1,72 @@
+---
+import { AstroFont } from "astro-font";
+---
+
+<AstroFont
+  config={[
+    {
+      name: "Outfit",
+      display: "swap",
+      selector: ".outfit",
+      fallback: "sans-serif",
+      src: [
+        {
+          style: "normal",
+          path: "./public/fonts/outfit.ttf",
+        },
+      ],
+    },
+    {
+      display: "swap",
+      name: "Poppins",
+      selector: ".poppins",
+      fallback: "sans-serif",
+      src: [
+        {
+          preload: false,
+          style: "normal",
+          path: "./public/fonts/poppins.ttf",
+        },
+      ],
+    },
+    {
+      display: "swap",
+      name: "Righteous",
+      fallback: "sans-serif",
+      selector: ".righteous",
+      src: [
+        {
+          preload: false,
+          style: "normal",
+          path: "./public/fonts/righteous.ttf",
+        },
+      ],
+    },
+    {
+      name: "Sanchez",
+      display: "swap",
+      fallback: "serif",
+      selector: ".sanchez",
+      src: [
+        {
+          preload: false,
+          style: "normal",
+          path: "./public/fonts/sanchez.ttf",
+        },
+      ],
+    },
+    {
+      display: "swap",
+      fallback: "serif",
+      selector: ".dm-serif",
+      name: "DM Serif Text",
+      src: [
+        {
+          preload: false,
+          style: "normal",
+          path: "./public/fonts/dm-serif.ttf",
+        },
+      ],
+    },
+  ]}
+/>

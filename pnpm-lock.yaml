@@ -20,6 +20,9 @@ dependencies:
   astro:
     specifier: ^4.1.3
     version: 4.1.3(typescript@5.3.3)
+  astro-font:
+    specifier: ^0.0.72
+    version: 0.0.72
   satori:
     specifier: ^0.5.0
     version: 0.5.0
@@ -1792,6 +1795,10 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /astro-font@0.0.72:
+    resolution: {integrity: sha512-FUjIerovSg2lsfJfvvqY23hgvc++gHi69ikFkxm0mqO3MPFykK5ppeUuROUjhNbE6vwdD8MpiJOy1CR5S0g/lQ==}
+    dev: false
 
   /astro@4.1.3(typescript@5.3.3):
     resolution: {integrity: sha512-9i8l0mEnpAOAi9F3DMkHGaZ4q56TGtt71XaAxhPXAlhZrVR/6ruobCyYdYwL1Fo0ATpuGXdaod1I7FFxFMcQbw==}

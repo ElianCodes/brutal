@@ -2,59 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "DM Serif Text";
-  font-style: normal;
-  font-display: swap;
-  src: url("/fonts/dm-serif.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Outfit";
-  font-style: normal;
-  font-display: swap;
-  src: url("/fonts/outfit.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-display: swap;
-  src: url("/fonts/poppins.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Righteous";
-  font-style: normal;
-  font-display: swap;
-  src: url("/fonts/righteous.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Sanchez";
-  font-style: normal;
-  font-display: swap;
-  src: url("/fonts/sanchez.ttf") format("truetype");
-}
-
-.outfit {
-  font-family: 'Outfit', sans-serif;
-}
-.righteous {
-  font-family: 'Righteous', sans-serif;
-}
-.dm-serif {
-  font-family: 'DM Serif Text', serif;
-}
-.fredoka {
-  font-family: 'Fredoka One', sans-serif;
-}
-.poppins {
-  font-family: 'Poppins', sans-serif;
-}
-.sanchez {
-  font-family: 'Sanchez', serif;
-}
 .card-shadow {
   filter: drop-shadow(7px 7px 0 rgb(0 0 0 / 1));
   transition: all;
