@@ -6,11 +6,11 @@ settings:
 
 dependencies:
   '@astrojs/rss':
-    specifier: ^4.0.1
-    version: 4.0.1
+    specifier: ^4.0.2
+    version: 4.0.2
   '@astrojs/sitemap':
-    specifier: ^3.0.3
-    version: 3.0.3
+    specifier: ^3.0.4
+    version: 3.0.4
   '@eliancodes/brutal-ui':
     specifier: ^0.2.3
     version: 0.2.3
@@ -18,8 +18,8 @@ dependencies:
     specifier: ^0.57.7
     version: 0.57.7(vite@5.0.10)
   astro:
-    specifier: ^4.0.6
-    version: 4.0.6(typescript@5.3.3)
+    specifier: ^4.1.3
+    version: 4.1.3(typescript@5.3.3)
   astro-font:
     specifier: ^0.0.68
     version: 0.0.68
@@ -131,15 +131,15 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/rss@4.0.1:
-    resolution: {integrity: sha512-fzXWsrAp17atO02OZJETM8e8McRz+dNWzMeO7ENb6xgod2nWj5mH/auPBFs1a9FzMUi1nOQmzSPHO1hxZZpkwQ==}
+  /@astrojs/rss@4.0.2:
+    resolution: {integrity: sha512-Hb9GKAyvsn5EUjZtB6SniesBScMQe7SQinEHLY5EFa74QEvgcWaXTmA0Mb0P3vqDSN3d/NTYbGivprrSAawfnA==}
     dependencies:
       fast-xml-parser: 4.3.2
       kleur: 4.1.5
     dev: false
 
-  /@astrojs/sitemap@3.0.3:
-    resolution: {integrity: sha512-+GRKp1yho9dpHBcMcU6JpbL41k0yYZghOkNsMRb8QIRflbGHvd787tdv9oIZ5NJj0SqAuOlqp2UpqLkJXuAe2A==}
+  /@astrojs/sitemap@3.0.4:
+    resolution: {integrity: sha512-RSqiqs0oD8zTGaClHM0YB8n7e5En+Ihi+6qKthWf47pRkzHpENwlPGvKuEL0kUFXq+GzYot9e2JYH58gtr2q0w==}
     dependencies:
       sitemap: 7.1.1
       zod: 3.22.4
@@ -1727,7 +1727,6 @@ packages:
     resolution: {integrity: sha512-b0P0sZPKtyu8HkeRAfCq0IfURZK+SuwMjY1UXGBU27wpAiTwQAIlq56IbIO+ytk/JjS1fMR14ee5WBBfKi5J6A==}
     dependencies:
       dequal: 2.0.3
-    dev: true
 
   /array-buffer-byte-length@1.0.0:
     resolution: {integrity: sha512-LPuwb2P+NrQw3XhxGc36+XSvuBPopovXYTR9Ew++Du9Yb/bx5AzBfrIsBoj0EZUifjQU+sHL21sseZ3jerWO/A==}
@@ -1817,8 +1816,8 @@ packages:
       github-slugger: 2.0.0
     dev: false
 
-  /astro@4.0.6(typescript@5.3.3):
-    resolution: {integrity: sha512-P7CfFqWKzkJozzF6IoOC6qoI2ONndV8P3ULhGDgMiXPL7xVkWI5haTBSpyrcjBx643tVXspIRsSV/v+Cx+CjGw==}
+  /astro@4.1.3(typescript@5.3.3):
+    resolution: {integrity: sha512-9i8l0mEnpAOAi9F3DMkHGaZ4q56TGtt71XaAxhPXAlhZrVR/6ruobCyYdYwL1Fo0ATpuGXdaod1I7FFxFMcQbw==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
     dependencies:
@@ -1834,6 +1833,8 @@ packages:
       '@babel/types': 7.23.6
       '@types/babel__core': 7.20.5
       acorn: 8.11.2
+      aria-query: 5.3.0
+      axobject-query: 4.0.0
       boxen: 7.1.1
       chokidar: 3.5.3
       ci-info: 4.0.0
@@ -1863,7 +1864,7 @@ packages:
       mime: 3.0.0
       ora: 7.0.1
       p-limit: 5.0.0
-      p-queue: 7.4.1
+      p-queue: 8.0.1
       path-to-regexp: 6.2.1
       preferred-pm: 3.1.2
       probe-image-size: 7.2.3
@@ -1927,6 +1928,12 @@ packages:
     dependencies:
       dequal: 2.0.3
     dev: true
+
+  /axobject-query@4.0.0:
+    resolution: {integrity: sha512-+60uv1hiVFhHZeO+Lz0RYzsVHy5Wr1ayX0mwda9KPDVLNJgZ1T9Ny7VmFbLDzxsH0D87I86vgj3gFrjTJUYznw==}
+    dependencies:
+      dequal: 2.0.3
+    dev: false
 
   /b4a@1.6.4:
     resolution: {integrity: sha512-fpWrvyVHEKyeEvbKZTVOeZF3VSKKWtJxFIxX/jaVPf+cLbGUSitjb49pHLqPV2BUNNZ0LcoeEGfE/YCpyDYHIw==}
@@ -4649,17 +4656,17 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /p-queue@7.4.1:
-    resolution: {integrity: sha512-vRpMXmIkYF2/1hLBKisKeVYJZ8S2tZ0zEAmIJgdVKP2nq0nh4qCdf8bgw+ZgKrkh71AOCaqzwbJJk1WtdcF3VA==}
-    engines: {node: '>=12'}
+  /p-queue@8.0.1:
+    resolution: {integrity: sha512-NXzu9aQJTAzbBqOt2hwsR63ea7yvxJc0PwN/zobNAudYfb1B7R08SzB4TsLeSbUCuG467NhnoT0oO6w1qRO+BA==}
+    engines: {node: '>=18'}
     dependencies:
       eventemitter3: 5.0.1
-      p-timeout: 5.1.0
+      p-timeout: 6.1.2
     dev: false
 
-  /p-timeout@5.1.0:
-    resolution: {integrity: sha512-auFDyzzzGZZZdHz3BtET9VEz0SE/uMEAx7uWfGPucfzEwwe/xH0iVeZibQmANYE/hp9T2+UUZT5m+BKyrDp3Ew==}
-    engines: {node: '>=12'}
+  /p-timeout@6.1.2:
+    resolution: {integrity: sha512-UbD77BuZ9Bc9aABo74gfXhNvzC9Tx7SxtHSh1fxvx3jTLLYvmVhiQZZrJzqqU0jKbN32kb5VOKiLEQI/3bIjgQ==}
+    engines: {node: '>=14.16'}
     dev: false
 
   /p-try@2.2.0:
