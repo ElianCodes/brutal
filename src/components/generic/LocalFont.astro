@@ -1,5 +1,9 @@
 ---
+import { join } from "node:path";
 import { AstroFont } from "astro-font";
+
+const appDir = process.cwd();
+const getFontPath = (name: string) => join(appDir, "public", "fonts", name);
 ---
 
 <AstroFont
@@ -12,7 +16,7 @@ import { AstroFont } from "astro-font";
       src: [
         {
           style: "normal",
-          path: "./public/fonts/outfit.ttf",
+          path: getFontPath("outfit.ttf"),
         },
       ],
     },
@@ -25,7 +29,7 @@ import { AstroFont } from "astro-font";
         {
           preload: false,
           style: "normal",
-          path: "./public/fonts/poppins.ttf",
+          path: getFontPath("poppins.ttf"),
         },
       ],
     },
@@ -38,20 +42,20 @@ import { AstroFont } from "astro-font";
         {
           preload: false,
           style: "normal",
-          path: "./public/fonts/righteous.ttf",
+          path: getFontPath("righteous.ttf"),
         },
       ],
     },
     {
-      name: "Sanchez",
       display: "swap",
+      name: "Sanchez",
       fallback: "serif",
       selector: ".sanchez",
       src: [
         {
           preload: false,
           style: "normal",
-          path: "./public/fonts/sanchez.ttf",
+          path: getFontPath("sanchez.ttf"),
         },
       ],
     },
@@ -64,7 +68,7 @@ import { AstroFont } from "astro-font";
         {
           preload: false,
           style: "normal",
-          path: "./public/fonts/dm-serif.ttf",
+          path: getFontPath("dm-serif.ttf"),
         },
       ],
     },
