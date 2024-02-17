@@ -1,0 +1,41 @@
+name: nightly
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  upgrade:
+    runs-on: ubuntu-latest
+    env:
+      NODE_OPTIONS: '--max_old_space_size=4096'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Upgrade Astro
+        run: pnpm dlx @astrojs/upgrade --yes
+
+      - name: PR Changes
+        uses: peter-evans/create-pull-request@v4
+        with:
+          branch: ci/update-astro
+          commit-message: 'ci: update Astro'
+          assignees: eliancodes
+          title: 'ci: update Astro'
+          body: Update Astro and packages to latest version
+          labels: ci
