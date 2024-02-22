@@ -9,8 +9,8 @@ dependencies:
     specifier: ^4.0.5
     version: 4.0.5
   '@astrojs/sitemap':
-    specifier: ^3.1.0
-    version: 3.1.0
+    specifier: ^3.1.1
+    version: 3.1.1
   '@eliancodes/brutal-ui':
     specifier: ^0.2.3
     version: 0.2.3
@@ -18,8 +18,8 @@ dependencies:
     specifier: ^0.57.7
     version: 0.57.7(vite@5.1.3)
   astro:
-    specifier: ^4.4.1
-    version: 4.4.1(typescript@5.3.3)
+    specifier: ^4.4.2
+    version: 4.4.2(typescript@5.3.3)
   astro-font:
     specifier: ^0.0.72
     version: 0.0.72
@@ -143,8 +143,8 @@ packages:
       kleur: 4.1.5
     dev: false
 
-  /@astrojs/sitemap@3.1.0:
-    resolution: {integrity: sha512-eAlD3ISaESByanYtr08yfwIYNZdLEvF8shSne5SaxSdrvtK7fS8UQTF0GpDFUpU/NOyqwB7YmndjlTplhYLP1A==}
+  /@astrojs/sitemap@3.1.1:
+    resolution: {integrity: sha512-qPgdBIcDUaea98mTtLfi5z9oXZpzSjEn/kes70/Ex8FOZZ+DIHVKRYOLOtvy8p+FTXr/9oc7BjmIbTYmYLLJVg==}
     dependencies:
       sitemap: 7.1.1
       zod: 3.22.4
@@ -1809,8 +1809,8 @@ packages:
     resolution: {integrity: sha512-FUjIerovSg2lsfJfvvqY23hgvc++gHi69ikFkxm0mqO3MPFykK5ppeUuROUjhNbE6vwdD8MpiJOy1CR5S0g/lQ==}
     dev: false
 
-  /astro@4.4.1(typescript@5.3.3):
-    resolution: {integrity: sha512-nJLgNg8UXKBJYXjWtekgv1TYZES++LAdShgyKL8L5yJMeiqlDSO+/Laq5VfRKoL9hzBdyolJMB0WDE/+bRZytg==}
+  /astro@4.4.2(typescript@5.3.3):
+    resolution: {integrity: sha512-r1djG61ABvZ9n73vaTW6nTKnMvWY1LQhPpBtzoA2OI2RAk/ptzsqK9ozkAG1qXO2bW3NLJi6pfMxxpngNAALyQ==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
     dependencies:
