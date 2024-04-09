@@ -21,8 +21,8 @@ dependencies:
     specifier: ^4.5.16
     version: 4.5.16(typescript@5.3.3)
   astro-font:
-    specifier: ^0.0.72
-    version: 0.0.72
+    specifier: ^0.0.80
+    version: 0.0.80
   satori:
     specifier: ^0.5.0
     version: 0.5.0
@@ -1966,8 +1966,8 @@ packages:
       - supports-color
     dev: true
 
-  /astro-font@0.0.72:
-    resolution: {integrity: sha512-FUjIerovSg2lsfJfvvqY23hgvc++gHi69ikFkxm0mqO3MPFykK5ppeUuROUjhNbE6vwdD8MpiJOy1CR5S0g/lQ==}
+  /astro-font@0.0.80:
+    resolution: {integrity: sha512-RjUANXSNdt0Yp2Tpyn7woBg67hCX2Gy1OiiA7B0NX501LcrzvFHoX98CoBgJC5af3tj3fznfLqqBmMr7wu6+fQ==}
     dev: false
 
   /astro@4.5.16(typescript@5.3.3):
