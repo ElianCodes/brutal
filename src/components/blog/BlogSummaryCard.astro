@@ -24,7 +24,7 @@ const { post } = Astro.props;
   <div class='hidden sm:inline-block'>
     <p class='poppins mt-2'>tags:</p>
     <div class='flex justify-between items-center'>
-      <ul class='flex gap-4 mt-2'>
+      <ul class='flex flex-wrap gap-4 mt-2'>
         {
           post.data.tags.map((tag) => {
             return (
