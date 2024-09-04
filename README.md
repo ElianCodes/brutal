@@ -15,7 +15,7 @@ You can bootstrap a new Astro project using Brutal with the following command:
 npx create astro@latest --template eliancodes/brutal
 
 # npm 7+
-npx create astro@latest -- --template eliancodes/brutal
+npm create astro@latest -- --template eliancodes/brutal
 
 # pnpm
 pnpm dlx create-astro --template eliancodes/brutal
