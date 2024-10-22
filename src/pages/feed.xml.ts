@@ -1,7 +1,7 @@
 import rss from '@astrojs/rss';
 import { getCollection } from 'astro:content';
 
-export async function GET(context) {
+export async function GET(context: any) {
   const blog = await getCollection('blog');
   return rss({
     title: 'Brutal Blog',
@@ -12,9 +12,8 @@ export async function GET(context) {
       title: post.data.title,
       pubDate: post.data.pubDate,
       description: post.data.description,
-      link: `/blog/${post.slug}/`,
+      link: `/blog/${post.id}/`,
     })),
     customData: '<language>en-us</language>',
-    canonicalUrl: 'https://brutal.elian.codes',
   });
 }

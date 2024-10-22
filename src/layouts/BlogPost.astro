@@ -6,8 +6,7 @@ import RecentBlogPosts from '@components/generic/RecentBlogPosts.astro';
 
 const ogImage = new URL(`/v1/generate/og/${Astro.params.slug}.png`, Astro.url);
 
-const { content, headings } = Astro.props;
-const { title, description } = content;
+const { content, headings, title, description } = Astro.props;
 ---
 
 <Layout
