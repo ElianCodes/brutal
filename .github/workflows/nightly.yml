@@ -28,14 +28,15 @@ jobs:
         run: pnpm install
 
       - name: Upgrade Astro
-        run: pnpm dlx @astrojs/upgrade --yes
+        run: pnpm dlx @astrojs/upgrade beta --yes
 
       - name: PR Changes
         uses: peter-evans/create-pull-request@v4
         with:
-          branch: ci/update-astro
+          branch: ci/update-astro-next
+          base: next
           commit-message: 'ci: update Astro'
           assignees: eliancodes
-          title: 'ci: update Astro'
-          body: Update Astro and packages to latest version
+          title: 'ci: update Astro Beta'
+          body: Update Astro and packages to latest beta version
           labels: ci
