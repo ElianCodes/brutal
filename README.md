@@ -11,14 +11,11 @@ This template is based on [my own personal website](<https://www.elian.codes/>),
 You can bootstrap a new Astro project using Brutal with the following command:
 
 ```bash
-# npm 6.x
-npx create astro@latest --template eliancodes/brutal
-
-# npm 7+
+# npm
 npm create astro@latest -- --template eliancodes/brutal
 
 # pnpm
-pnpm dlx create-astro --template eliancodes/brutal
+pnpm create astro@latest --template eliancodes/brutal
 
 # yarn
 yarn create astro --template eliancodes/brutal
