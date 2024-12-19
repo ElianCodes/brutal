@@ -30,7 +30,7 @@ All commands are run from the root of the project, from a terminal:
 | Command             | Action                                             |
 | :------------------ | :------------------------------------------------- |
 | `pnpm install`      | Installs dependencies                              |
-| `pnpm dev`          | Starts local dev server at `localhost:3000`        |
+| `pnpm dev`          | Starts local dev server at `localhost:4321`        |
 | `pnpm build`        | Build your production site to `./dist/`            |
 | `pnpm preview`      | Preview your build locally, before deploying       |
 | `pnpm astro ...`    | Run CLI commands like `astro add`, `astro preview` |
@@ -44,7 +44,7 @@ In this theme, I'm using [UnoCSS](https://uno.antfu.me/) to generate the CSS. It
 
 ### Sitemap
 
-To generate the sitemap, you don't need to do anything. It's automatically generated when you build your site. You'll just need to switch out the `site` on `astro.config.mjs` to your own.
+To generate the sitemap, you don't need to do anything. It's automatically generated when you build your site. You'll just need to switch out the `site` on `astro.config.ts` to your own.
 
 ```js title="astro.config.mjs"
 import { defineConfig } from 'astro/config';
@@ -87,28 +87,5 @@ This directory contains all components for the home page.
 ### `components/layout/`
 
 This directory contains all layout components. For instance, the header and footer and `<head>` section.
-
-### Colors
-
-The theme has a few colors that you can use in the included components.
-
-- red
-- blue
-- green
-- yellow
-- pink
-- purple
-- orange
-- teal
-- cyan
-- lime
-- emerald
-- fuchsia
-- violet
-- rose
-- sky
-- amber
-
-More colors can be added in `astro.config.mjs` in the `colors` array.
 
 If you need more from this theme, don't hesitate to open an issue or reach out to me!
