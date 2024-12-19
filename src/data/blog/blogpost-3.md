@@ -8,7 +8,6 @@ tags:
   - Astro
   - Vite
 imgUrl: '../../assets/astro.jpeg'
-layout: ../../layouts/BlogPost.astro
 ---
 
 ## Deorum petiit ignis

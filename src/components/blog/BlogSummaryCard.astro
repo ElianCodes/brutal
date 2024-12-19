@@ -18,7 +18,7 @@ const { post } = Astro.props;
   description={post.data.description}
 >
   <div class='flex justify-end my-4'>
-    <Button href={`/blog/${post.slug}/`}>Read post &rarr;</Button>
+    <Button href={`/blog/${post.id}/`}>Read post &rarr;</Button>
   </div>
 
   <div class='hidden sm:inline-block'>

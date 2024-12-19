@@ -6,18 +6,21 @@ import RecentBlogPosts from '@components/generic/RecentBlogPosts.astro';
 
 const ogImage = new URL(`/v1/generate/og/${Astro.params.slug}.png`, Astro.url);
 
-const { content, headings } = Astro.props;
-const { title, description } = content;
+interface Props {
+  author: string;
+  pubDate: Date;
+  headings: unknown;
+  description: string;
+  title: string;
+}
+
+const { author, pubDate, headings, description, title } = Astro.props;
 ---
 
-<Layout
-  title={title as string}
-  description={description as string}
-  ogImage={ogImage}
->
+<Layout title={title} description={description} ogImage={ogImage}>
   <main class='p-6 lg:grid lg:grid-cols-3 flex justify-center'>
-    <BlogSideBar headings={headings} />
-    <BlogContent content={content}>
+    <BlogSideBar headings={headings as any[]} />
+    <BlogContent {pubDate} {author}>
       <slot />
     </BlogContent>
   </main>
