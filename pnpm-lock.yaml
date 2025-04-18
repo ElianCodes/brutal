@@ -18,8 +18,8 @@ dependencies:
     specifier: ^0.57.7
     version: 0.57.7(vite@5.4.10)
   astro:
-    specifier: ^5.7.0
-    version: 5.7.0(typescript@5.3.3)
+    specifier: ^5.7.3
+    version: 5.7.3(typescript@5.3.3)
   astro-font:
     specifier: ^0.0.80
     version: 0.0.80
@@ -534,10 +534,6 @@ packages:
       '@babel/helper-validator-identifier': 7.25.9
     dev: false
 
-  /@capsizecss/metrics@3.5.0:
-    resolution: {integrity: sha512-Ju2I/Qn3c1OaU8FgeW4Tc22D4C9NwyVfKzNmzst59bvxBjPoLYNZMqFYn+HvCtn4MpXwiaDtCE8fNuQLpdi9yA==}
-    dev: false
-
   /@capsizecss/unpack@2.4.0:
     resolution: {integrity: sha512-GrSU71meACqcmIUxPYOJvGKF0yryjN/L1aCuE9DViCTJI7bfkjgYDPD1zbNDcINJwSSP6UaBZY9GAbYDO7re0Q==}
     dependencies:
@@ -741,7 +737,7 @@ packages:
     resolution: {integrity: sha512-3bfqkzuR1KLx57nZfjr2NLnFOobvyS0aTszaEGCGqmYMVDRaGvgIZbjGSV/MHSSmLgQ/b9JFHQ5xm5WRZYd+XQ==}
     requiresBuild: true
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.8.1
     dev: false
     optional: true
 
@@ -2405,8 +2401,8 @@ packages:
     resolution: {integrity: sha512-RjUANXSNdt0Yp2Tpyn7woBg67hCX2Gy1OiiA7B0NX501LcrzvFHoX98CoBgJC5af3tj3fznfLqqBmMr7wu6+fQ==}
     dev: false
 
-  /astro@5.7.0(typescript@5.3.3):
-    resolution: {integrity: sha512-LxvWFlCQSxRLqvtCfZ/LFzlaHcvX++qtq0NrRmwtDmrZhAyHOoVfLkxEE0STKgn0wjLTuETyBrgCBWe2eb68/A==}
+  /astro@5.7.3(typescript@5.3.3):
+    resolution: {integrity: sha512-2b/OOS/A6GO4QP94x6oRzwTfXabFqE2rlUbbi42o6wZm9+zzcOc6VRFAq4lTOEI/iCrEVl3wTdBAC5X3h3Es+Q==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
     dependencies:
@@ -2414,7 +2410,6 @@ packages:
       '@astrojs/internal-helpers': 0.6.1
       '@astrojs/markdown-remark': 6.3.1
       '@astrojs/telemetry': 3.2.0
-      '@capsizecss/metrics': 3.5.0
       '@capsizecss/unpack': 2.4.0
       '@oslojs/encoding': 1.1.0
       '@rollup/pluginutils': 5.1.4
@@ -2458,7 +2453,7 @@ packages:
       tinyglobby: 0.2.12
       tsconfck: 3.1.5(typescript@5.3.3)
       ultrahtml: 1.6.0
-      unifont: 0.1.7
+      unifont: 0.2.0
       unist-util-visit: 5.0.0
       unstorage: 1.15.0
       vfile: 6.0.3
@@ -5282,8 +5277,8 @@ packages:
       ufo: 1.5.4
     dev: false
 
-  /ohash@1.1.6:
-    resolution: {integrity: sha512-TBu7PtV8YkAZn0tSxobKY2n2aAQva936lhRrj6957aDaCf9IEtqsKbgMzXE/F/sjqYOwmrukeORHNLe5glk7Cg==}
+  /ohash@2.0.11:
+    resolution: {integrity: sha512-RdR9FQrFwNBNXAr4GixM8YaRZRJ5PUWbKYbE5eOsrwAjJW0q2REGcf79oYPsLyskQCZG1PLN+S/K1V00joZAoQ==}
     dev: false
 
   /once@1.4.0:
@@ -6561,6 +6556,7 @@ packages:
 
   /tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
+    dev: true
 
   /tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
@@ -6718,11 +6714,11 @@ packages:
       vfile: 6.0.3
     dev: false
 
-  /unifont@0.1.7:
-    resolution: {integrity: sha512-UyN6r/TUyl69iW/jhXaCtuwA6bP9ZSLhVViwgP8LH9EHRGk5FyIMDxvClqD5z2BV6MI9GMATzd0dyLqFxKkUmQ==}
+  /unifont@0.2.0:
+    resolution: {integrity: sha512-RoF14/tOhLvDa7R5K6A3PjsfJVFKvadvRpWjfV1ttabUe9704P1ie9z1ABLWEts/8SxrBVePav/XhgeFNltpsw==}
     dependencies:
       css-tree: 3.1.0
-      ohash: 1.1.6
+      ohash: 2.0.11
     dev: false
 
   /unist-util-find-after@5.0.0:
