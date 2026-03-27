@@ -1,41 +1,55 @@
-name: nightly
+name: Nightly Upgrade
 
 on:
   schedule:
     - cron: '0 0 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: nightly-upgrade
+  cancel-in-progress: true
 
 jobs:
   upgrade:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     env:
       NODE_OPTIONS: '--max_old_space_size=4096'
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v4
         with:
-          version: 8
+          version: 10.32.1
 
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: pnpm
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
       - name: Upgrade Astro
         run: pnpm dlx @astrojs/upgrade --yes
 
-      - name: PR Changes
-        uses: peter-evans/create-pull-request@v4
+      - name: Verify changes
+        run: |
+          pnpm install
+          pnpm run check
+          pnpm run build
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v7
         with:
           branch: ci/update-astro
           commit-message: 'ci: update Astro'
           assignees: eliancodes
           title: 'ci: update Astro'
-          body: Update Astro and packages to latest version
+          body: Update Astro and related packages to the latest compatible versions.
           labels: ci
