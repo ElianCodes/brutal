@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 .card-shadow {
   filter: drop-shadow(7px 7px 0 rgb(0 0 0 / 1));
@@ -10,6 +9,22 @@
 }
 .card-shadow:hover {
   filter: drop-shadow(5px 5px 0 rgb(0 0 0 / 1));
+}
+
+.bg-pink-theme {
+  background-color: rgb(249 168 212);
+}
+
+.bg-green-theme {
+  background-color: rgb(134 239 172);
+}
+
+.bg-purple-theme {
+  background-color: rgb(216 180 254);
+}
+
+.bg-blue-theme {
+  background-color: rgb(147 197 253);
 }
 
 :root 

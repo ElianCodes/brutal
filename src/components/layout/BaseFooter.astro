@@ -11,7 +11,7 @@ const { backToTop = false } = Astro.props;
     <button
       class:list={[
         backToTop ? `backToTop` : null,
-        'transition-300 z-50 opacity-0 fixed flex bottom-[10px] right-[30px] w-10 h-10 bg-white border border-black card-shadow',
+        'fixed bottom-[10px] right-[30px] z-50 flex h-10 w-10 border border-black bg-white opacity-0 transition-all duration-300 card-shadow',
       ]}
     >
       <svg
@@ -39,7 +39,7 @@ const { backToTop = false } = Astro.props;
     Brutal theme for Astro - by <a
       href='https://www.elian.codes/'
       target='_blank'
-      class='text-blue'>ElianCodes</a
+      class='text-blue-300'>ElianCodes</a
     >
   </p>
 </footer>
