@@ -31,10 +31,22 @@ All commands are run from the root of the project, from a terminal:
 | :------------------ | :------------------------------------------------- |
 | `pnpm install`      | Installs dependencies                              |
 | `pnpm dev`          | Starts local dev server at `localhost:4321`        |
+| `pnpm lint`         | Runs Biome lint checks                             |
+| `pnpm format`       | Formats the project with Biome                     |
+| `pnpm check`        | Runs Astro checks plus `biome check`               |
 | `pnpm build`        | Build your production site to `./dist/`            |
 | `pnpm preview`      | Preview your build locally, before deploying       |
 | `pnpm astro ...`    | Run CLI commands like `astro add`, `astro preview` |
 | `pnpm astro --help` | Get help using the Astro CLI                       |
+
+## Tooling
+
+This project uses [Biome](https://biomejs.dev/) for formatting, linting, and import organization.
+Astro-specific diagnostics still run through `astro check`, so CI and local validation use both:
+
+```bash
+pnpm run check
+```
 
 ## Integrations
 
