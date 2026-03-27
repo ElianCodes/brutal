@@ -3,7 +3,7 @@
   "version": "1.2.0",
   "private": false,
   "type": "module",
-  "packageManager": "pnpm@8.6.0",
+  "packageManager": "pnpm@10.32.1",
   "author": {
     "name": "Elian Van Cutsem",
     "email": "hello@elian.codes",
@@ -15,30 +15,34 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "check": "astro check",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/rss": "^4.0.15",
-    "@astrojs/sitemap": "^3.7.0",
+    "@astrojs/rss": "^4.0.18",
+    "@astrojs/sitemap": "^3.7.2",
     "@eliancodes/brutal-ui": "^0.2.3",
-    "@unocss/astro": "^0.57.7",
-    "astro": "^5.18.0",
-    "astro-font": "^0.0.80",
+    "@unocss/astro": "^66.6.7",
+    "astro": "^6.1.1",
+    "astro-font": "^1.1.0",
     "satori": "^0.5.0",
     "satori-html": "^0.3.2"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.8",
     "@iconify-json/logos": "^1.1.41",
     "@iconify-json/uil": "^1.1.8",
     "@resvg/resvg-js": "^2.6.0",
     "@typescript-eslint/parser": "^6.15.0",
-    "@unocss/reset": "^0.57.7",
+    "@unocss/reset": "^66.6.7",
     "eslint": "^8.56.0",
     "eslint-plugin-astro": "^0.29.1",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "prettier": "^3.1.1",
     "prettier-plugin-astro": "^0.12.2",
     "sharp": "^0.32.6",
-    "unocss": "^0.57.7"
+    "typescript": "^5.9.3",
+    "unocss": "^66.6.7",
+    "vite": "^7.3.1"
   }
 }
