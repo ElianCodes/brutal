@@ -1,15 +1,21 @@
 ---
-import Layout from './Default.astro';
-import BlogSideBar from '@components/blog/BlogSideBar.astro';
 import BlogContent from '@components/blog/BlogContent.astro';
+import BlogSideBar from '@components/blog/BlogSideBar.astro';
 import RecentBlogPosts from '@components/generic/RecentBlogPosts.astro';
+import Layout from './Default.astro';
 
 const ogImage = new URL(`/v1/generate/og/${Astro.params.slug}.png`, Astro.url);
+
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
 
 interface Props {
   author: string;
   pubDate: Date;
-  headings: unknown;
+  headings?: Heading[];
   description: string;
   title: string;
 }
@@ -19,7 +25,7 @@ const { author, pubDate, headings, description, title } = Astro.props;
 
 <Layout title={title} description={description} ogImage={ogImage}>
   <main class='p-6 lg:grid lg:grid-cols-3 flex justify-center'>
-    <BlogSideBar headings={headings as any[]} />
+    <BlogSideBar headings={headings ?? []} />
     <BlogContent {pubDate} {author}>
       <slot />
     </BlogContent>

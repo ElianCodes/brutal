@@ -1,6 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import { Pill, Button } from '@eliancodes/brutal-ui';
+import { Button, Pill } from '@eliancodes/brutal-ui';
 import SummaryCard from '../generic/SummaryCard.astro';
 
 interface Props {
@@ -38,7 +38,7 @@ const { post } = Astro.props;
       </ul>
       {
         post.data.draft && (
-          <span class='bg-green rounded-full border-2 py-1 px-4 text-sm border-black card-shadow'>
+          <span class='rounded-full border-2 border-black bg-green-300 px-4 py-1 text-sm card-shadow'>
             Draft
           </span>
         )

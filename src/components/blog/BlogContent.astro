@@ -7,12 +7,12 @@ interface Props {
 const { pubDate, author } = Astro.props;
 ---
 
-<article class='prose-slate w-sm md:w-prose md:prose poppins'>
+<article class='w-full max-w-sm poppins md:max-w-prose md:prose md:prose-slate'>
   <a href='/blog/' title='Back to blog'>&larr; Back to blog</a>
-  <p class='text-slate text-sm md:text-base'>
+  <p class='text-sm text-slate-700 md:text-base'>
     Published on {pubDate} by {author}
   </p>
   <slot />
-  <p class='text-slate'>Written by {author}</p>
+  <p class='text-slate-700'>Written by {author}</p>
   <a href='/blog/' title='Back to blog'>&larr; Back to blog</a>
 </article>

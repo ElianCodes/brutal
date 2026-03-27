@@ -1,4 +1,8 @@
 ---
+import SocialIcon from '@components/generic/SocialIcon.astro';
+
+type SocialIconName = 'github' | 'twitter' | 'linkedin' | 'rss';
+
 interface Props {
   pageTitle?: string;
 }
@@ -8,18 +12,18 @@ const navigationItems = [
   { name: 'Blog', url: '/blog/' },
 ];
 
-const socialIcons = [
+const socialIcons: Array<{ name: string; url: string; icon: SocialIconName }> = [
   {
     name: 'GitHub',
     url: 'https://github.com/eliancodes/brutal',
-    icon: 'i-uil-github',
+    icon: 'github',
   },
   {
     name: 'Twitter',
     url: 'https://www.twitter.com/eliancodes',
-    icon: 'i-uil-twitter',
+    icon: 'twitter',
   },
-  { name: 'RSS', url: '/feed.xml', icon: 'i-uil-rss' },
+  { name: 'RSS', url: '/feed.xml', icon: 'rss' },
 ];
 
 const { pageTitle } = Astro.props;
@@ -37,7 +41,7 @@ const { pageTitle } = Astro.props;
         navigationItems.map((item) => (
           <li>
             <a
-              class='text-lg font-medium hover:text-green hover:underline transition-all duration-150 ease-in-out'
+              class='text-lg font-medium hover:text-green-700 hover:underline transition-all duration-150 ease-in-out'
               href={item.url}
               title={`Go to ${item.name}`}
             >
@@ -51,11 +55,12 @@ const { pageTitle } = Astro.props;
           <li>
             <a
               href={item.url}
-              class='hover:text-green hover:underline transition-all duration-150 ease-in-out'
+              class='hover:text-green-700 hover:underline transition-all duration-150 ease-in-out'
               target='_blank'
-              title={`'See @ElianCodes on ${item.name}`}
+              rel='noopener'
+              title={`See @ElianCodes on ${item.name}`}
             >
-              <div class:list={[item.icon, 'w-6 h-6']} />
+              <SocialIcon icon={item.icon} class='h-6 w-6' />
             </a>
           </li>
         ))

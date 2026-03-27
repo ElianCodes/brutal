@@ -31,16 +31,28 @@ All commands are run from the root of the project, from a terminal:
 | :------------------ | :------------------------------------------------- |
 | `pnpm install`      | Installs dependencies                              |
 | `pnpm dev`          | Starts local dev server at `localhost:4321`        |
+| `pnpm lint`         | Runs Biome lint checks                             |
+| `pnpm format`       | Formats the project with Biome                     |
+| `pnpm check`        | Runs Astro checks plus `biome check`               |
 | `pnpm build`        | Build your production site to `./dist/`            |
 | `pnpm preview`      | Preview your build locally, before deploying       |
 | `pnpm astro ...`    | Run CLI commands like `astro add`, `astro preview` |
 | `pnpm astro --help` | Get help using the Astro CLI                       |
 
+## Tooling
+
+This project uses [Biome](https://biomejs.dev/) for formatting, linting, and import organization.
+Astro-specific diagnostics still run through `astro check`, so CI and local validation use both:
+
+```bash
+pnpm run check
+```
+
 ## Integrations
 
-### UnoCSS
+### Tailwind CSS
 
-In this theme, I'm using [UnoCSS](https://uno.antfu.me/) to generate the CSS. It's a utility-first CSS framework that uses a single class to style elements. It's very easy to use and has a lot of features. It's setup to be completely compatible with TailwindCSS, with the advantage of being able to use PureCSS icons. You can always switch out UnoCSS for TailwindCSS if you want to, without breaking the general styles.
+In this theme, I'm using [Tailwind CSS](https://tailwindcss.com/) to generate the utility classes. The project uses Astro's Tailwind setup with the Vite plugin, plus a small amount of regular CSS for the theme-specific scrollbar and shadow styling.
 
 ### Sitemap
 

@@ -1,14 +1,12 @@
 ---
-import Layout from '@layouts/Default.astro';
 import RecentBlogPosts from '@components/generic/RecentBlogPosts.astro';
 import MobileSocials from '@components/home/MobileSocials.astro';
-import { Pill } from '@eliancodes/brutal-ui';
-import { Button } from '@eliancodes/brutal-ui';
-import { Card } from '@eliancodes/brutal-ui';
+import { Button, Card, Pill } from '@eliancodes/brutal-ui';
+import Layout from '@layouts/Default.astro';
 
 const builtWith = [
   { name: 'Astro', url: 'https://astro.build/' },
-  { name: 'UnoCSS', url: 'https://uno.antfu.me/' },
+  { name: 'Tailwind CSS', url: 'https://tailwindcss.com/' },
   {
     name: 'Content Collections',
     url: 'https://docs.astro.build/en/guides/content-collections/',
@@ -28,7 +26,7 @@ const builtWith = [
   pageTitle='Brutal Theme | Home'
   description='Brutal is a minimalistic, neobrutalism theme for Astro.'
 >
-  <main class='bg-pink p-6'>
+  <main class='bg-pink-theme p-6'>
     <MobileSocials />
     <section id='about' class='grid md:grid-cols-8 gap-8 mt-4'>
       <h2 class='hidden'>About Brutal</h2>
@@ -39,6 +37,7 @@ const builtWith = [
               Brutal theme for <a
                 class='text-white'
                 target='_blank'
+                rel='noopener'
                 href='https://astro.build/'>Astro</a
               >
             </p>
@@ -65,6 +64,7 @@ const builtWith = [
                       class='sanchez'
                       href={item.url}
                       target='_blank'
+                      rel='noopener'
                       title={`Go to ${item.name}`}
                     >
                       {item.name}
@@ -82,7 +82,7 @@ const builtWith = [
             What is Brutal?
           </h2>
           <p class='poppins'>
-            Brutal is a theme built with Astro, UnoCSS by <a
+            Brutal is a theme built with Astro and Tailwind CSS by <a
               href='https://www.elian.codes/'>Elian</a
             >. It's a simple, fast, and modern theme that is easy to use and
             customize. Mainly meant to power blogs and personal websites.

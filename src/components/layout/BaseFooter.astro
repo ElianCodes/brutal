@@ -9,10 +9,12 @@ const { backToTop = false } = Astro.props;
 {
   backToTop && (
     <button
+      type='button'
       class:list={[
         backToTop ? `backToTop` : null,
-        'transition-300 z-50 opacity-0 fixed flex bottom-[10px] right-[30px] w-10 h-10 bg-white border border-black card-shadow',
+        'fixed bottom-[10px] right-[30px] z-50 flex h-10 w-10 border border-black bg-white opacity-0 transition-all duration-300 card-shadow',
       ]}
+      aria-label='Back to top'
     >
       <svg
         xmlns='http://www.w3.org/2000/svg'
@@ -23,6 +25,7 @@ const { backToTop = false } = Astro.props;
         stroke-width='1.5'
         stroke='currentColor'
       >
+        <title>Back to top</title>
         <path
           stroke-linecap='round'
           stroke-linejoin='round'
@@ -39,7 +42,8 @@ const { backToTop = false } = Astro.props;
     Brutal theme for Astro - by <a
       href='https://www.elian.codes/'
       target='_blank'
-      class='text-blue'>ElianCodes</a
+      rel='noopener'
+      class='text-blue-300'>ElianCodes</a
     >
   </p>
 </footer>
