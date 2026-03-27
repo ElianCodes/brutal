@@ -12,11 +12,12 @@
   "homepage": "https://brutal.elian.codes",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro check && astro build",
+    "start": "astro dev",
+    "build": "astro build",
     "preview": "astro preview",
     "lint": "biome lint .",
     "format": "biome format --write .",
-    "check": "biome check .",
+    "check": "astro check && biome check .",
     "astro": "astro"
   },
   "dependencies": {
