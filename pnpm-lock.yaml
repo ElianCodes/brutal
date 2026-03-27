@@ -15,8 +15,8 @@ importers:
         specifier: ^3.7.2
         version: 3.7.2
       '@eliancodes/brutal-ui':
-        specifier: ^0.2.7
-        version: 0.2.7(astro@6.1.1(@types/node@24.12.0)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.0)(typescript@5.9.3)(yaml@2.8.3))
+        specifier: ^1.0.0
+        version: 1.0.0(astro@6.1.1(@types/node@24.12.0)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.0)(typescript@5.9.3)(yaml@2.8.3))
       '@tailwindcss/typography':
         specifier: ^0.5.16
         version: 0.5.19(tailwindcss@4.2.2)
@@ -194,8 +194,8 @@ packages:
   '@clack/prompts@1.1.0':
     resolution: {integrity: sha512-pkqbPGtohJAvm4Dphs2M8xE29ggupihHdy1x84HNojZuMtFsHiUlRvqD24tM2+XmI+61LlfNceM3Wr7U5QES5g==}
 
-  '@eliancodes/brutal-ui@0.2.7':
-    resolution: {integrity: sha512-b7bIRA9/6AjfmXtfkx++In5AuNsX8gXzlcLfs005qDoMyFkl8XemeqdFN9qnaobghaykVKaGjoiQmfimXP3BVA==}
+  '@eliancodes/brutal-ui@1.0.0':
+    resolution: {integrity: sha512-r/uP7CCHbPj8E32/SN/jbUNppuwy8ItBf91tbzjNDJIqX9S9oW9E78BDmkBWQTZOXLgy6Dl8n7SAloFiZs4Jmw==}
     peerDependencies:
       astro: ^6.0.0
 
@@ -2415,7 +2415,7 @@ snapshots:
       '@clack/core': 1.1.0
       sisteransi: 1.0.5
 
-  '@eliancodes/brutal-ui@0.2.7(astro@6.1.1(@types/node@24.12.0)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.0)(typescript@5.9.3)(yaml@2.8.3))':
+  '@eliancodes/brutal-ui@1.0.0(astro@6.1.1(@types/node@24.12.0)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.0)(typescript@5.9.3)(yaml@2.8.3))':
     dependencies:
       astro: 6.1.1(@types/node@24.12.0)(jiti@2.6.1)(lightningcss@1.32.0)(rollup@4.60.0)(typescript@5.9.3)(yaml@2.8.3)
 
