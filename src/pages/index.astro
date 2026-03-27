@@ -1,10 +1,8 @@
 ---
-import Layout from '@layouts/Default.astro';
 import RecentBlogPosts from '@components/generic/RecentBlogPosts.astro';
 import MobileSocials from '@components/home/MobileSocials.astro';
-import { Pill } from '@eliancodes/brutal-ui';
-import { Button } from '@eliancodes/brutal-ui';
-import { Card } from '@eliancodes/brutal-ui';
+import { Button, Card, Pill } from '@eliancodes/brutal-ui';
+import Layout from '@layouts/Default.astro';
 
 const builtWith = [
   { name: 'Astro', url: 'https://astro.build/' },
@@ -39,6 +37,7 @@ const builtWith = [
               Brutal theme for <a
                 class='text-white'
                 target='_blank'
+                rel='noopener'
                 href='https://astro.build/'>Astro</a
               >
             </p>
@@ -65,6 +64,7 @@ const builtWith = [
                       class='sanchez'
                       href={item.url}
                       target='_blank'
+                      rel='noopener'
                       title={`Go to ${item.name}`}
                     >
                       {item.name}

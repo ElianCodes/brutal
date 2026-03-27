@@ -28,7 +28,7 @@ const socials: Array<{ name: string; url: string; icon: SocialIconName }> = [
     {
       socials.map((item) => (
         <li class='rounded border-2 border-black bg-white px-4 py-2 text-green-700 card-shadow'>
-          <a href={item.url} target='_blank' title={`Go to ${item.name}`}>
+          <a href={item.url} target='_blank' rel='noopener' title={`Go to ${item.name}`}>
             <SocialIcon icon={item.icon} class='p-6' />
           </a>
         </li>

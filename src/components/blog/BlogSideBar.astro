@@ -1,16 +1,22 @@
 ---
-interface Props {
-  headings: Array<Object>;
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
 }
 
-const { headings } = Astro.props;
+interface Props {
+  headings?: Heading[];
+}
+
+const { headings = [] } = Astro.props;
 ---
 
 <aside>
   <nav class='hidden lg:block sticky top-6'>
     <ul>
       {
-        headings.map((heading: any) => (
+        headings.map((heading) => (
           <li class='py-1'>
             {[...Array(heading.depth - 1)].map((_, _i) => (
               <span class='inline-block w-4' />

@@ -1,9 +1,9 @@
 ---
-import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
-import Layout from '@layouts/Default.astro';
+import { getCollection } from 'astro:content';
 import BlogList from '@components/blog/BlogList.astro';
 import { Button } from '@eliancodes/brutal-ui';
+import Layout from '@layouts/Default.astro';
 
 export async function getStaticPaths() {
   const allPosts = await getCollection('blog').then((collection) =>

@@ -1,5 +1,5 @@
 ---
-import { type CollectionEntry, render, getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import Layout from '@layouts/BlogPost.astro';
 
 export async function getStaticPaths() {
@@ -10,12 +10,15 @@ export async function getStaticPaths() {
   }));
 }
 
-interface Props {
-  blogpost: CollectionEntry<'blog'>;
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
 }
 
 const { blogpost } = Astro.props;
 const { Content } = await render(blogpost);
+const headings = blogpost.rendered?.metadata?.headings as Heading[] | undefined;
 ---
 
 <Layout
@@ -23,7 +26,7 @@ const { Content } = await render(blogpost);
   description={blogpost.data.description}
   pubDate={blogpost.data.pubDate}
   author={blogpost.data.author}
-  headings={blogpost.rendered?.metadata?.headings}
+  headings={headings}
 >
   <Content />
 </Layout>

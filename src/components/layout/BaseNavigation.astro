@@ -57,7 +57,8 @@ const { pageTitle } = Astro.props;
               href={item.url}
               class='hover:text-green-700 hover:underline transition-all duration-150 ease-in-out'
               target='_blank'
-              title={`'See @ElianCodes on ${item.name}`}
+              rel='noopener'
+              title={`See @ElianCodes on ${item.name}`}
             >
               <SocialIcon icon={item.icon} class='h-6 w-6' />
             </a>
