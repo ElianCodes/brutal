@@ -1,6 +1,6 @@
 ---
 import LocalFont from '../generic/LocalFont.astro';
-import { ViewTransitions } from 'astro:transitions';
+import { ClientRouter } from 'astro:transitions';
 
 interface Props {
   title: string;
@@ -49,7 +49,7 @@ const { title, description, ogImage } = Astro.props;
 
   <title>Brutal Theme | {title}</title>
 
-  <ViewTransitions />
+  <ClientRouter />
 
   <slot />
 </head>

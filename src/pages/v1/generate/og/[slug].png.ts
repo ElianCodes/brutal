@@ -21,7 +21,7 @@ export function getStaticPaths() {
   }));
 }
 
-export const GET: APIRoute = async ({ params, props }) => {
+export const GET: APIRoute = async ({ props }) => {
   const title = props.title.trim() ?? 'Blogpost';
   const description = props.description ?? null;
   const html = toReactElement(`
@@ -64,8 +64,9 @@ export const GET: APIRoute = async ({ params, props }) => {
   const resvg = new Resvg(svg, opts);
   const pngData = resvg.render();
   const pngBuffer = pngData.asPng();
+  const body = new Uint8Array(pngBuffer);
 
-  return new Response(pngBuffer, {
+  return new Response(body, {
     headers: {
       'content-type': 'image/png',
     },
